@@ -207,6 +207,7 @@ nav {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  padding-top: 50px;
 }
 .hero-content {
   width: 50%;
@@ -746,7 +747,7 @@ footer {
   .hero-content,
   .hero-img {
     width: 100%;
-    padding-top: 75px;
+    padding-top: 40px;
   }
 
   .hero-img {
