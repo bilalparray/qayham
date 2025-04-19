@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /search/
+Disallow: /?s=
+
+Sitemap: https://qayham.com/sitemap.xml
