@@ -794,7 +794,17 @@ footer {
   background-color: var(--primary-dark);
   transform: translateY(-3px);
 }
-
+.newsletter-form {
+  input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: inherit;
+    transition: var(--transition);
+    margin-bottom: 0.5rem;
+  }
+}
 /* Responsive Design */
 @media screen and (max-width: 968px) {
   h1 {
