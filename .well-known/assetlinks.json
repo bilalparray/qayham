@@ -5,9 +5,9 @@
         ],
         "target": {
             "namespace": "android_app",
-            "package_name": "com.renosoftwares.talesweaverai",
+            "package_name": "com.qayham.quickunits",
             "sha256_cert_fingerprints": [
-                "9D:3F:10:B3:8E:F3:67:91:18:47:C4:CE:94:57:93:9B:F6:01:44:C8:CE:CB:D5:6B:75:87:2D:35:19:E0:41:DD"
+                "D0:4C:D0:2B:05:17:94:CB:72:48:CA:BD:21:5E:B0:62:8E:39:34:4C:27:33:59:F4:3F:CE:42:DA:74:20:0B:9B"
             ]
         }
     }
