@@ -10,5 +10,17 @@
                 "D0:4C:D0:2B:05:17:94:CB:72:48:CA:BD:21:5E:B0:62:8E:39:34:4C:27:33:59:F4:3F:CE:42:DA:74:20:0B:9B"
             ]
         }
+    },
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.qayham.qrscanner",
+            "sha256_cert_fingerprints": [
+                "3C:F8:3F:90:AC:1E:AE:AC:A1:4A:26:5B:B2:B3:01:FE:89:FC:F8:8A:9D:30:93:EC:29:AF:D6:ED:9D:15:49:1E"
+            ]
+        }
     }
 ]
