@@ -168,6 +168,24 @@ nav {
   width: 100%;
 }
 
+.nav-links a.nav-link-highlight {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 30px;
+}
+
+.nav-links a.nav-link-highlight::after {
+  display: none;
+}
+
+.nav-links a.nav-link-highlight:hover {
+  background-color: var(--primary-dark);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(67, 97, 238, 0.4);
+}
+
 /* .burger {
   display: none;
   cursor: pointer;
