@@ -5,6 +5,18 @@
         ],
         "target": {
             "namespace": "android_app",
+            "package_name": "com.qayham.cloudnotes",
+            "sha256_cert_fingerprints": [
+                "6F:ED:DE:C7:39:2C:E1:E0:6A:0E:BE:40:98:6D:B6:1F:C4:25:36:7D:66:F6:12:35:F4:2A:9B:A7:4B:C6:09:FB"
+            ]
+        }
+    },
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
             "package_name": "com.qayham.quickunits",
             "sha256_cert_fingerprints": [
                 "D0:4C:D0:2B:05:17:94:CB:72:48:CA:BD:21:5E:B0:62:8E:39:34:4C:27:33:59:F4:3F:CE:42:DA:74:20:0B:9B"
