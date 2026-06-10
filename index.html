@@ -2,555 +2,488 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Primary Meta Tags -->
-    <title>QAYHAM | Custom Software, Mobile Apps & Digital Solutions</title>
+    <title>QAYHAM | Mobile Apps & Digital Products</title>
     <meta name="description"
-        content="QAYHAM crafts custom software, mobile applications, and digital solutions to fuel business growth. Tailored CRM, web development & enterprise services." />
+        content="QAYHAM builds modern mobile apps and web tools — Cloud Notes, Quick Units, QR Scanner, and more. Available on Google Play." />
     <meta name="keywords"
-        content="QAYHAM,qayham,qayam,qaham,qayham.com, custom software, mobile app development, CRM solutions, web development, digital solutions, enterprise software" />
+        content="QAYHAM, qayham, mobile apps, Flutter, Android, Cloud Notes, custom software, web development" />
 
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://qayham.com/" />
-    <meta property="og:title" content="QAYHAM | Custom Software, Mobile Apps & Digital Solutions" />
+    <meta property="og:title" content="QAYHAM | Mobile Apps & Digital Products" />
     <meta property="og:description"
-        content="Custom software, mobile app development, and digital solutions designed to elevate your business. Partner with QAYHAM for scalable, innovative services." />
+        content="We build apps people use every day — from note-taking to unit conversion. Explore our products on Google Play and web." />
     <meta property="og:image" content="https://qayham.com/images/logo/gradientlogo.webp" />
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://qayham.com/" />
-    <meta name="twitter:title" content="QAYHAM | Custom Software, Mobile Apps & Digital Solutions" />
+    <meta name="twitter:title" content="QAYHAM | Mobile Apps & Digital Products" />
     <meta name="twitter:description"
-        content="Innovative custom software, mobile apps, and digital solutions crafted for growth. Discover QAYHAM’s expertise in CRM, web, and enterprise software." />
+        content="Modern mobile apps and web tools by QAYHAM. Cloud Notes, Quick Units, QR Scanner and more." />
     <meta name="twitter:image" content="https://qayham.com/images/logo/gradientlogo.webp" />
 
-    <!-- Canonical -->
     <link rel="canonical" href="https://qayham.com/" />
-
-    <!-- Favicon & PWA -->
     <link rel="icon" href="images/logo/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" sizes="180x180" href="https://qayham.com/images/logo/gradientlogo.webp" />
-    <link rel="icon" type="image/png" sizes="32x32" href="https://qayham.com/images/logo/gradientlogo.webp" />
-    <link rel="icon" type="image/png" sizes="16x16" href="https://qayham.com/images/logo/gradientlogo.webp" />
     <link rel="manifest" href="/site.webmanifest" />
 
-    <!-- External Styles & Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
 </head>
 
-
-
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">
-                    QAYHAM <span></span>
-                </div>
+
+    <header class="site-header" id="siteHeader">
+        <div class="container header-inner">
+            <a href="#home" class="logo">
+                <img src="images/logo/gradientlogo.webp" alt="QAYHAM" class="logo-img" />
+                <span class="logo-text">QAYHAM</span>
+            </a>
+
+            <nav class="nav" id="mainNav">
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#process">Process</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="/cloudnotes/" class="nav-link-highlight">Cloud Notes</a></li>
                 </ul>
-                <div class="burger">
-                    <!-- <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div> -->
-                    <img src="images/logo/gradientlogo.webp" alt="logo" class="brandlogo">
-                </div>
+                <a href="/cloudnotes/" class="btn btn-sm btn-primary nav-cta">Cloud Notes</a>
             </nav>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-tag">Innovative Software Solutions</div>
-                <h1>Transform Your Business With Powerful Software</h1>
-                <p>QAYHAM delivers cutting-edge software solutions that help businesses streamline operations,
-                    improve efficiency, and drive growth in an increasingly digital world.</p>
-                <div class="hero-btns">
-                    <a href="/cloudnotes/" class="btn btn-primary">Cloud Notes</a>
-                    <a href="#contact" class="btn btn-outline">Contact Us</a>
-                </div>
+    <main>
+        <!-- Hero -->
+        <section class="hero" id="home">
+            <div class="hero-bg">
+                <div class="hero-orb hero-orb-1"></div>
+                <div class="hero-orb hero-orb-2"></div>
+                <div class="hero-grid"></div>
             </div>
-            <div class="hero-img ">
-                <img src="images/logo/gradientlogo.webp" alt="Dashboard Software" class="software-image">
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Services</h2>
-                <p>Comprehensive software solutions tailored to your business needs</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">💻</div>
-                    <h3>Custom Software Development</h3>
-                    <p>Bespoke software solutions designed to address your unique business challenges and requirements.
+            <div class="container hero-inner">
+                <div class="hero-content reveal">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        Building apps since day one
+                    </div>
+                    <h1>Apps built for<br /><span class="gradient-text">real people</span></h1>
+                    <p class="hero-desc">
+                        QAYHAM creates polished mobile apps and web tools — from synced note-taking
+                        to everyday utilities. Nine apps on Google Play and growing.
                     </p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">📱</div>
-                    <h3>Mobile App Development</h3>
-                    <p>Native and cross-platform mobile applications that deliver exceptional user experiences across
-                        devices.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🌐</div>
-                    <h3>Web Development</h3>
-                    <p>Responsive, scalable, and feature-rich web applications built with cutting-edge technologies.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🤖</div>
-                    <h3>AI & Machine Learning</h3>
-                    <p>Intelligent solutions that leverage the power of artificial intelligence to automate processes
-                        and gain insights.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">📊</div>
-                    <h3>Data Analytics</h3>
-                    <p>Transform your raw data into actionable insights with our advanced analytics solutions.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🔐</div>
-                    <h3>Cybersecurity</h3>
-                    <p>Protect your business with comprehensive security solutions designed to safeguard your digital
-                        assets.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features" id="features">
-        <div class="container">
-            <div class="section-header">
-                <h2>Key Features</h2>
-                <p>Why businesses choose QAYHAM</p>
-            </div>
-            <div class="features-container">
-                <div class="features-content">
-                    <ul class="feature-list">
-                        <li class="feature-item">
-                            <div class="feature-icon">✓</div>
-                            <div>
-                                <h3>Highly Customizable</h3>
-                                <p>Our solutions are tailored to your specific business requirements, ensuring perfect
-                                    alignment with your operations.</p>
-                            </div>
-                        </li>
-                        <li class="feature-item">
-                            <div class="feature-icon">✓</div>
-                            <div>
-                                <h3>Scalable Architecture</h3>
-                                <p>Built to grow with your business, our software can handle increasing loads without
-                                    compromising performance.</p>
-                            </div>
-                        </li>
-                        <li class="feature-item">
-                            <div class="feature-icon">✓</div>
-                            <div>
-                                <h3>Intuitive User Interface</h3>
-                                <p>User-friendly designs that prioritize ease of use, reducing training time and
-                                    improving adoption rates.</p>
-                            </div>
-                        </li>
-                        <li class="feature-item">
-                            <div class="feature-icon">✓</div>
-                            <div>
-                                <h3>Comprehensive Support</h3>
-                                <p>Our team provides continuous support and maintenance to ensure your software runs
-                                    smoothly.</p>
-                            </div>
-                        </li>
-                        <li class="feature-item">
-                            <div class="feature-icon">✓</div>
-                            <div>
-                                <h3>Advanced Security</h3>
-                                <p>State-of-the-art security measures to protect your data and ensure compliance with
-                                    regulations.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="features-img">
-                    <img src="images/features/feature.webp" alt="Software Features" class="features-image">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2>Client Testimonials</h2>
-                <p>What our clients say about us</p>
-            </div>
-            <div class="testimonial-container">
-                <div class="testimonial-card active">
-
-                    <img src="images/features/profile.png" alt="Client" class="testimonial-img">
-                    <div class="testimonial-rating">★★★★★</div>
-                    <p>"QAYHAM transformed our business operations with their custom CRM solution. The
-                        software streamlined our processes and increased our productivity by over 40%. Their team was
-                        professional, responsive, and truly understood our needs."</p>
-                    <h4>Sarah Johnson</h4>
-                    <p>CEO, TechInnovate Inc.</p>
-                </div>
-                <div class="testimonial-card">
-                    <img src="images/features/profile.png" alt="Client" class="testimonial-img">
-                    <div class="testimonial-rating">★★★★★</div>
-                    <p>"The mobile app developed by QAYHAM exceeded our expectations. The user interface is
-                        intuitive, and the performance is outstanding. Our customers love the app, and it has
-                        significantly increased our engagement metrics."</p>
-                    <h4>Michael Chen</h4>
-                    <p>Product Manager, GlobalRetail</p>
-                </div>
-                <div class="testimonial-card">
-                    <img src="images/features/profile.png" alt="Client" class="testimonial-img">
-                    <div class="testimonial-rating">★★★★★</div>
-                    <p>"Working with QAYHAM was a game-changer for our data analytics capabilities. Their
-                        solution gave us insights we never had before, allowing us to make data-driven decisions that
-                        have dramatically improved our bottom line."</p>
-                    <h4>Emma Rodriguez</h4>
-                    <p>CTO, DataDrive Solutions</p>
-                </div>
-                <div class="testimonial-nav">
-                    <div class="testimonial-nav-btn active" data-index="0"></div>
-                    <div class="testimonial-nav-btn" data-index="1"></div>
-                    <div class="testimonial-nav-btn" data-index="2"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section class="pricing" id="pricing">
-        <div class="container">
-            <div class="section-header">
-                <h2>Pricing Plans</h2>
-                <p>Flexible options to meet your business needs</p>
-            </div>
-            <div class="pricing-container">
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <div class="pricing-name">Starter</div>
-                        <div class="pricing-price">$499<span>/month</span></div>
-                        <p>Perfect for small businesses</p>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>Custom Software Development</li>
-                        <li>Up to 3 User Licenses</li>
-                        <li>Basic Support</li>
-                        <li>Monthly Updates</li>
-                        <li>1GB Storage</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-outline">Get Started</a>
-                </div>
-                <div class="pricing-card popular">
-                    <div class="pricing-header">
-                        <div class="pricing-name">Business</div>
-                        <div class="pricing-price">$999<span>/month</span></div>
-                        <p>Ideal for growing companies</p>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>Advanced Software Solutions</li>
-                        <li>Up to 10 User Licenses</li>
-                        <li>Priority Support</li>
-                        <li>Bi-weekly Updates</li>
-                        <li>5GB Storage</li>
-                        <li>Data Analytics Dashboard</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-primary">Get Started</a>
-                </div>
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <div class="pricing-name">Enterprise</div>
-                        <div class="pricing-price">$1999<span>/month</span></div>
-                        <p>For large organizations</p>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>Full Software Suite</li>
-                        <li>Unlimited User Licenses</li>
-                        <li>24/7 Premium Support</li>
-                        <li>Weekly Updates</li>
-                        <li>20GB Storage</li>
-                        <li>Advanced Analytics & Reporting</li>
-                        <li>Custom Integrations</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-outline">Get Started</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta">
-        <div class="container">
-            <h2>Ready to Transform Your Business?</h2>
-            <p>Join hundreds of satisfied clients who have revolutionized their operations with our software solutions.
-                Schedule a free consultation today and discover how QAYHAM can help you achieve your business
-                goals.</p>
-            <a href="#contact" class="btn btn-light">Schedule a Free Consultation</a>
-        </div>
-    </section>
-    <!-- Products Section -->
-    <section class="products" id="products">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Products</h2>
-                <p>Explore our published applications available on Google Play Store</p>
-            </div>
-            <div class="products-grid">
-                <!-- Cloud Notes Card -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/products/cloudnotes.png" alt="Cloud Notes">
-                    </div>
-                    <div class="product-content">
-                        <h3>Cloud Notes</h3>
-                        <p>Sync your notes across all devices. Cloud Notes is a modern note-taking web app that lets you
-                            create, edit, and access your notes from anywhere—phone, tablet, or desktop.</p>
-                        <a href="https://play.google.com/store/apps/details?id=com.qayham.cloudnotes" target="_blank"
-                            rel="noopener noreferrer" class="btn btn-primary">
-                            <i class="fab fa-google-play"></i> Get on Play Store
+                    <div class="hero-actions">
+                        <a href="/cloudnotes/" class="btn btn-primary">
+                            Try Cloud Notes
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                         </a>
+                        <a href="#products" class="btn btn-ghost">View all apps</a>
                     </div>
-                </div>
-
-                <!-- Compound Calculator Card -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/products/compounding-calculator.png" alt="Compound Calculator">
-                    </div>
-                    <div class="product-content">
-                        <h3>Compound Calculator</h3>
-                        <p>Advanced compound interest calculator with detailed breakdowns and multiple currency support.
-                            Perfect for financial planning and investment calculations.</p>
-                        <a href="https://play.google.com/store/apps/details?id=com.bilalparray07.compoundingcalculator"
-                            target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                            <i class="fab fa-google-play"></i> Get on Play Store
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Quick Units Card -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/products/quick-units.png" alt="Quick Units">
-                    </div>
-                    <div class="product-content">
-                        <h3>Quick Units</h3>
-                        <p>Instant unit conversion tool supporting various measurement systems.
-                            Convert between currencies, lengths, weights, temperatures, and more with real-time rates.
-                        </p>
-                        <a href="https://play.google.com/store/apps/details?id=com.qayham.quickunits" target="_blank"
-                            rel="noopener noreferrer" class="btn btn-primary">
-                            <i class="fab fa-google-play"></i> Get on Play Store
-                        </a>
-                    </div>
-                </div>
-                <!-- Retail lifter -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/products/retail-lifter.png" alt="Quick Units">
-                    </div>
-                    <div class="product-content">
-                        <h3>Retail Lifter</h3>
-                        <p>The Retail Lifter is a cutting-edge mobile app designed to revolutionize the way retailers
-                            manage their inventory. With its intuitive interface and advanced features, the Retail
-                            Lifter
-                            empowers retailers to efficiently manage their inventory, optimize inventory levels, and
-                            enhance customer experience.
-                        </p>
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                            <i class="fab fa-google-play"></i> Coming Soon
-                        </a>
-                    </div>
-                </div>
-                <!-- Team awesome sozeith -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/products/teamawesomesozeith.png" alt="teamawesomesozeith">
-                    </div>
-                    <div class="product-content">
-                        <h3>Team Awesome Sozeith</h3>
-                        <p>The Team Awesome Sozeith is an innovative mobile app designed to track your team's
-                            performance. With its intuitive interface and advanced features, Team Awesome Sozeith allows
-                            fans to effortlessly monitor the stats of their favorite Awesomies.
-                        </p>
-                        <a href="https://play.google.com/store/apps/details?id=com.qayham.teamawesomesozeith"
-                            target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                            <i class="fab fa-google-play"></i> Get on Play Store
-                        </a>
-                    </div>
-                </div>
-                <!-- QR Scanner And Generator -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/products/qrscanner.png" alt="QR Scanner and Generator App Logo">
-                    </div>
-                    <div class="product-content">
-                        <h3>QR Scanner and Generator</h3>
-                        <p>
-                            The QR Scanner and Generator is a fast, lightweight mobile app that allows users to
-                            effortlessly scan all types of QR codes and barcodes. It also enables users to generate
-                            custom QR codes for websites, Wi-Fi credentials, emails, contacts, SMS, geo locations, and
-                            more. With an intuitive UI and offline capabilities, it's the perfect tool for personal and
-                            professional use.
-                        </p>
-                        <a href="https://play.google.com/store/apps/details?id=com.qayham.qrscanner" target="_blank"
-                            rel="noopener noreferrer" class="btn btn-primary">
-                            <i class="fab fa-google-play"></i> Get on Play Store
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Get In Touch</h2>
-                <p>Have questions? We're here to help.</p>
-            </div>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <p>Reach out to us through any of these channels or fill out the form.</p>
-                    <div class="contact-item">
-                        <div class="contact-icon">📍</div>
-                        <div>
-                            <h4>Address</h4>
-                            <p>123 Tech Park, Silicon Valley, CA 94043, USA</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-num">9+</span>
+                            <span class="stat-label">Published apps</span>
                         </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📞</div>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>+1 (555) 123-4567</p>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-num">Web</span>
+                            <span class="stat-label">&amp; Android</span>
                         </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">✉️</div>
-                        <div>
-                            <h4>Email</h4>
-                            <p>info@qayham.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">🕒</div>
-                        <div>
-                            <h4>Working Hours</h4>
-                            <p>Monday - Friday: 9am - 6pm</p>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-num">Free</span>
+                            <span class="stat-label">to get started</span>
                         </div>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <h3>Send Us a Message</h3>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name" required>
+                <div class="hero-visual reveal reveal-delay">
+                    <div class="hero-card-stack">
+                        <div class="hero-showcase">
+                            <img src="images/logo/gradientlogo.webp" alt="QAYHAM" class="hero-logo" />
+                        </div>
+                        <div class="hero-float-card hero-float-1">
+                            <img src="images/products/cloudnotes.png" alt="" />
+                            <span>Cloud Notes</span>
+                        </div>
+                        <div class="hero-float-card hero-float-2">
+                            <img src="images/products/quick-units.png" alt="" />
+                            <span>Quick Units</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products -->
+        <section class="section products-section" id="products">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Our Products</span>
+                    <h2>Apps on Google Play</h2>
+                    <p>Tools we built, shipped, and maintain — available for download today.</p>
+                </div>
+
+                <div class="products-grid">
+                    <article class="product-card product-featured-banner reveal">
+                        <div class="product-badge">Featured</div>
+                        <div class="product-icon-wrap">
+                            <img src="images/products/cloudnotes.png" alt="Cloud Notes" />
+                        </div>
+                        <div class="product-body">
+                            <h3>Cloud Notes</h3>
+                            <p>Sync notes across every device. Create, edit, and access your notes from phone, tablet, or desktop — online or offline.</p>
+                            <div class="product-actions">
+                                <a href="/cloudnotes/" class="btn btn-primary btn-sm">Open Web App</a>
+                                <a href="https://play.google.com/store/apps/details?id=com.qayham.cloudnotes" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                                    <i class="fab fa-google-play"></i> Play Store
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card reveal">
+                        <div class="product-icon-wrap">
+                            <img src="images/products/tradejournal.png" alt="Trade Journal" />
+                        </div>
+                        <div class="product-body">
+                            <h3>Trade Journal</h3>
+                            <p>Trading journal and daily profit &amp; loss tracker. Log trades, review performance, and stay on top of your strategy.</p>
+                            <a href="https://play.google.com/store/apps/details?id=com.qayham.tradejournal" target="_blank" rel="noopener noreferrer" class="product-link">
+                                <i class="fab fa-google-play"></i> Get on Play Store
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="product-card reveal">
+                        <div class="product-icon-wrap">
+                            <img src="images/products/whatsappgallery.png" alt="WhatsApp Gallery" />
+                        </div>
+                        <div class="product-body">
+                            <h3>WhatsApp Gallery</h3>
+                            <p>Browse, preview, share, and save photos, videos, and documents from WhatsApp — fully on-device, no uploads.</p>
+                            <a href="https://play.google.com/store/apps/details?id=com.qayham.whatsappgallery" target="_blank" rel="noopener noreferrer" class="product-link">
+                                <i class="fab fa-google-play"></i> Get on Play Store
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="product-card reveal">
+                        <div class="product-icon-wrap">
+                            <img src="images/products/trainerflow.png" alt="Trainer Flow" />
+                        </div>
+                        <div class="product-body">
+                            <h3>Trainer Flow</h3>
+                            <p>Manage clients, workouts, and training schedules — a streamlined app built for personal trainers and fitness coaches.</p>
+                            <a href="https://play.google.com/store/apps/details?id=com.qayham.trainerflow" target="_blank" rel="noopener noreferrer" class="product-link">
+                                <i class="fab fa-google-play"></i> Get on Play Store
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="product-card reveal">
+                        <div class="product-icon-wrap">
+                            <img src="images/products/cloudnotes.png" alt="Cloud Notes" />
+                        </div>
+                        <div class="product-body">
+                            <h3>Cloud Notes</h3>
+                            <p>Sync notes across every device. Create, edit, and access your notes from phone, tablet, or desktop — online or offline.</p>
+                            <div class="product-actions">
+                                <a href="/cloudnotes/" class="btn btn-primary btn-sm">Web App</a>
+                                <a href="https://play.google.com/store/apps/details?id=com.qayham.cloudnotes" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                                    <i class="fab fa-google-play"></i> Play Store
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card reveal">
+                        <div class="product-icon-wrap">
+                            <img src="images/products/quick-units.png" alt="Quick Units" />
+                        </div>
+                        <div class="product-body">
+                            <h3>Quick Units</h3>
+                            <p>Instant unit conversion — currencies, lengths, weights, temperatures, and more with live rates.</p>
+                            <a href="https://play.google.com/store/apps/details?id=com.qayham.quickunits" target="_blank" rel="noopener noreferrer" class="product-link">
+                                <i class="fab fa-google-play"></i> Get on Play Store
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="product-card reveal">
+                        <div class="product-icon-wrap">
+                            <img src="images/products/qrscanner.png" alt="QR Scanner" />
+                        </div>
+                        <div class="product-body">
+                            <h3>QR Scanner &amp; Generator</h3>
+                            <p>Scan any QR or barcode. Generate codes for Wi-Fi, contacts, URLs, and more — works offline.</p>
+                            <a href="https://play.google.com/store/apps/details?id=com.qayham.qrscanner" target="_blank" rel="noopener noreferrer" class="product-link">
+                                <i class="fab fa-google-play"></i> Get on Play Store
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="product-card reveal">
+                        <div class="product-icon-wrap">
+                            <img src="images/products/compounding-calculator.png" alt="Compound Calculator" />
+                        </div>
+                        <div class="product-body">
+                            <h3>Compound Calculator</h3>
+                            <p>Advanced compound interest calculator with detailed breakdowns and multi-currency support.</p>
+                            <a href="https://play.google.com/store/apps/details?id=com.bilalparray07.compoundingcalculator" target="_blank" rel="noopener noreferrer" class="product-link">
+                                <i class="fab fa-google-play"></i> Get on Play Store
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="product-card reveal">
+                        <div class="product-icon-wrap">
+                            <img src="images/products/teamawesomesozeith.png" alt="Team Awesome Sozeith" />
+                        </div>
+                        <div class="product-body">
+                            <h3>Team Awesome Sozeith</h3>
+                            <p>Track your team's performance. Monitor stats of your favorite Awesomies with an intuitive interface.</p>
+                            <a href="https://play.google.com/store/apps/details?id=com.qayham.teamawesomesozeith" target="_blank" rel="noopener noreferrer" class="product-link">
+                                <i class="fab fa-google-play"></i> Get on Play Store
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="product-card product-soon reveal">
+                        <div class="product-icon-wrap">
+                            <img src="images/products/retail-lifter.png" alt="Retail Lifter" />
+                        </div>
+                        <div class="product-body">
+                            <h3>Retail Lifter</h3>
+                            <p>Inventory management for retailers — optimize stock levels and streamline operations.</p>
+                            <span class="product-soon-badge">Coming Soon</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="section services-section" id="services">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">What We Do</span>
+                    <h2>Services</h2>
+                    <p>From idea to App Store — we handle design, development, and launch.</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card reveal">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18.01"/></svg>
+                        </div>
+                        <h3>Mobile App Development</h3>
+                        <p>Native and cross-platform Android apps built with Flutter — fast, polished, and Play Store ready.</p>
+                    </div>
+
+                    <div class="service-card reveal">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        </div>
+                        <h3>Web Applications</h3>
+                        <p>Responsive web apps that work everywhere — PWA-ready, cloud-synced, and built for performance.</p>
+                    </div>
+
+                    <div class="service-card reveal">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </div>
+                        <h3>Custom Software</h3>
+                        <p>Tailored tools for your business — CRM, dashboards, automation, and integrations that fit your workflow.</p>
+                    </div>
+
+                    <div class="service-card reveal">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <h3>Maintenance &amp; Support</h3>
+                        <p>Ongoing updates, bug fixes, and feature additions to keep your software running smoothly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process -->
+        <section class="section process-section" id="process">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">How We Work</span>
+                    <h2>From concept to launch</h2>
+                    <p>A clear, collaborative process — no surprises.</p>
+                </div>
+
+                <div class="process-grid">
+                    <div class="process-step reveal">
+                        <div class="process-num">01</div>
+                        <h3>Discover</h3>
+                        <p>We learn your goals, audience, and requirements. You get a clear scope and timeline before any code is written.</p>
+                    </div>
+                    <div class="process-step reveal">
+                        <div class="process-num">02</div>
+                        <h3>Build</h3>
+                        <p>Design and development in focused sprints. You see progress early and often with regular check-ins.</p>
+                    </div>
+                    <div class="process-step reveal">
+                        <div class="process-num">03</div>
+                        <h3>Launch</h3>
+                        <p>App Store submission, deployment, and handoff — plus ongoing support to keep things running.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-card reveal">
+                    <h2>Have a project in mind?</h2>
+                    <p>Tell us what you're building. We'll get back to you with a plan and a quote — no commitment required.</p>
+                    <div class="cta-actions">
+                        <a href="https://wa.me/919682318133" target="_blank" rel="noopener noreferrer" class="btn btn-light">
+                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                        </a>
+                        <a href="#contact" class="btn btn-ghost-light">Send a message</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Contact</span>
+                    <h2>Get in touch</h2>
+                    <p>Questions, partnerships, or custom projects — we'd love to hear from you.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info reveal">
+                        <a href="https://wa.me/919682318133" target="_blank" rel="noopener noreferrer" class="contact-card">
+                            <div class="contact-card-icon whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>+91 96823 18133</p>
+                            </div>
+                        </a>
+                        <a href="mailto:parraybilal34@gmail.com" class="contact-card">
+                            <div class="contact-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>parraybilal34@gmail.com</p>
+                            </div>
+                        </a>
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </div>
+                            <div>
+                                <h4>Response time</h4>
+                                <p>Usually within 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form reveal" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" class="form-control" placeholder="Your name" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" class="form-control" placeholder="you@email.com" required />
+                            </div>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Your Email" required>
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" placeholder="What's this about?" />
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Subject">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" placeholder="Tell us about your project..." required></textarea>
                         </div>
-                        <div class="form-group">
-                            <textarea class="form-control" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-primary">
+                            Send Message
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </button>
                     </form>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Footer -->
-    <footer>
+    <footer class="site-footer">
         <div class="container">
-            <div class="footer-container">
-                <div class="footer-col">
-                    <h4>QAYHAM</h4>
-                    <p>Delivering innovative software solutions that transform businesses and drive growth in an
-                        increasingly digital world.</p>
-                    <!-- <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div> -->
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <img src="images/logo/gradientlogo.webp" alt="QAYHAM" class="logo-img" />
+                        <span class="logo-text">QAYHAM</span>
+                    </a>
+                    <p>Building mobile apps and web tools that people actually use.</p>
                 </div>
                 <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links">
+                    <h4>Navigate</h4>
+                    <ul>
                         <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
                         <li><a href="#services">Services</a></li>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#pricing">Pricing</a></li>
                         <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="/cloudnotes/">Cloud Notes</a></li>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.qayham.quickunits" target="_blank" rel="noopener noreferrer">Quick Units</a></li>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.qayham.qrscanner" target="_blank" rel="noopener noreferrer">QR Scanner</a></li>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.qayham.tradejournal" target="_blank" rel="noopener noreferrer">Trade Journal</a></li>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.qayham.whatsappgallery" target="_blank" rel="noopener noreferrer">WhatsApp Gallery</a></li>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.qayham.trainerflow" target="_blank" rel="noopener noreferrer">Trainer Flow</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
                         <li><a href="/privacy.html">Privacy Policy</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Our Services</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Custom Software Development</a></li>
-                        <li><a href="#">Mobile App Development</a></li>
-                        <li><a href="#">Web Development</a></li>
-                        <li><a href="#">AI & Machine Learning</a></li>
-                        <li><a href="#">Data Analytics</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Newsletter</h4>
-                    <p>Subscribe to our newsletter for the latest updates and insights.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Your Email" required>
-                        <button type="submit" class="btn btn-primary">Subscribe</button>
-                    </form>
-                </div>
             </div>
-            <div class="copyright">
-                <p>&copy; 2025 QAYHAM. All Rights Reserved.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 QAYHAM. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- WhatsApp contact button -->
-    <a href="https://wa.me/9682318133" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <a href="https://wa.me/919682318133" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <!-- Back to top button -->
-    <div class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
-    </div>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
 
-
-    <!-- JavaScript -->
-    <script src="app.js">
-        // JavaScript will be linked in separate file
-    </script>
+    <script src="app.js"></script>
 </body>
 
 </html>
