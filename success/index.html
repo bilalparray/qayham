@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Successful</title>
+
+    <script>
+        function openApp() {
+            const path = window.location.pathname;
+
+            // /success/abc123
+            const token = path.split('/')[2];
+
+            // Your custom scheme
+            window.location.href =
+                "gatehouse://success/" + token;
+        }
+
+        window.onload = function () {
+            openApp();
+
+            setTimeout(() => {
+                document.getElementById("fallback").style.display = "block";
+            }, 2000);
+        };
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        button {
+            padding: 12px 24px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="fallback" style="display:none">
+        <h1>Payment Successful</h1>
+
+        <p>
+            If the app did not open automatically,
+            tap the button below.
+        </p>
+
+        <button onclick="openApp()">
+            Open GateHouse App
+        </button>
+    </div>
+
+</body>
+
+</html>
