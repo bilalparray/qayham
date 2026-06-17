@@ -9,7 +9,9 @@
     <link rel="icon" href="/images/logo/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="/style.css" />
     <script>
@@ -17,6 +19,30 @@
             var path = window.location.pathname;
             if (path.startsWith("/join/")) {
                 window.location.replace("/cloudnotes" + path + window.location.search + window.location.hash);
+            }
+            // Payarc Success
+            if (path.startsWith("/success/")) {
+
+                var token = path.split("/success/")[1];
+
+                // Try opening app via custom scheme
+                window.location.href =
+                    "gatehouse://success/" + token;
+
+                // Fallback after 2 seconds
+                setTimeout(function () {
+                    document.body.innerHTML = `
+        <div style="padding:40px;text-align:center">
+            <h1>Payment Successful</h1>
+            <p>If the app did not open automatically, tap below.</p>
+            <button onclick="window.location.href='gatehouse://success/${token}'">
+                Open GateHouse App
+            </button>
+        </div>
+    `;
+                }, 2000);
+
+                return;
             }
         })();
     </script>
@@ -61,7 +87,10 @@
                 <div class="error-actions">
                     <a href="/" class="btn btn-primary">
                         Back to Home
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
                     </a>
                     <a href="/#products" class="btn btn-outline">View Apps</a>
                     <a href="/cloudnotes/" class="btn btn-outline">Cloud Notes</a>
