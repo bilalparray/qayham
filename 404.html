@@ -31,15 +31,18 @@
 
                 // Fallback after 2 seconds
                 setTimeout(function () {
+
                     document.body.innerHTML = `
-        <div style="padding:40px;text-align:center">
-            <h1>Payment Successful</h1>
-            <p>If the app did not open automatically, tap below.</p>
-            <button onclick="window.location.href='gatehouse://success/${token}'">
-                Open GateHouse App
-            </button>
-        </div>
-    `;
+    <div style="padding:40px;text-align:center">
+        <h1>Payment Successful</h1>
+        <p>If the app did not open automatically, tap below.</p>
+        <a href="gatehouse://success/${token}">
+            Open GateHouse App
+        </a>
+    </div>
+`;
+
+
                 }, 2000);
 
                 return;
