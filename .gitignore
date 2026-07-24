@@ -39,7 +39,8 @@ Thumbs.db
 
 # Applications
 *.app
-
+*.exe
+!products/netdrop/downloads/NetDropSetup.exe
 *.war
 
 # Large media files
