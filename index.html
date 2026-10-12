@@ -1,638 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>QAYHAM | Mobile Apps & Digital Products</title>
-    <meta name="description"
-        content="QAYHAM builds modern mobile apps and web tools — Cloud Notes, Quick Units, QR Scanner, and more. Available on Google Play." />
-    <meta name="keywords"
-        content="QAYHAM, qayham, mobile apps, Flutter, Android, Cloud Notes, custom software, web development" />
-
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://qayham.com/" />
-    <meta property="og:title" content="QAYHAM | Mobile Apps & Digital Products" />
-    <meta property="og:description"
-        content="We build apps people use every day — from note-taking to unit conversion. Explore our products on Google Play and web." />
-    <meta property="og:image" content="https://qayham.com/images/logo/gradientlogo.webp" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://qayham.com/" />
-    <meta name="twitter:title" content="QAYHAM | Mobile Apps & Digital Products" />
-    <meta name="twitter:description"
-        content="Modern mobile apps and web tools by QAYHAM. Cloud Notes, Quick Units, QR Scanner and more." />
-    <meta name="twitter:image" content="https://qayham.com/images/logo/gradientlogo.webp" />
-
-    <link rel="canonical" href="https://qayham.com/" />
-    <link rel="icon" href="images/logo/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" sizes="180x180" href="https://qayham.com/images/logo/gradientlogo.webp" />
-    <link rel="manifest" href="/site.webmanifest" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#073b2b">
+<meta name="description" content="Wedding invitation for Bilal Ahmad Parray. Join us for Mehndi Raat and the Wedding Banquet in Sozeith.">
+<title>Bilal Ahmad Parray | Wedding Invitation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+:root{--green:#063b2b;--green2:#0b4b36;--gold:#c69a42;--gold-light:#f0d99a;--cream:#fff8e8;--ink:#18372b}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);font-family:"Cormorant Garamond",Georgia,serif;background:#f8f0dc;background-image:radial-gradient(ellipse at top,rgba(255,255,255,.92),transparent 65%),linear-gradient(135deg,#f7efd9,#fffaf0 48%,#efe0bc)}
+.hero{position:relative;overflow:hidden;text-align:center;padding:56px 20px 46px;background:var(--green);color:var(--cream);border-bottom:5px double var(--gold)}
+.hero:before,.hero:after{content:"✦";position:absolute;color:var(--gold-light);font-size:150px;opacity:.18;top:12px}
+.hero:before{left:3%}.hero:after{right:3%}
+.bismillah{font-size:clamp(25px,4vw,38px);color:var(--gold-light);margin-bottom:14px}
+.eyebrow{letter-spacing:4px;text-transform:uppercase;font-size:12px;color:#ead6a1}
+.hero h1{font-family:"Great Vibes",cursive;font-size:clamp(54px,10vw,100px);font-weight:400;line-height:1.1;margin:10px 0;color:#fff3d0}
+.weds{letter-spacing:7px;text-transform:uppercase;color:var(--gold-light);font-size:15px;margin:8px}
+.hero .subtitle{font-size:clamp(17px,3vw,23px);margin:18px auto 0;max-width:680px;line-height:1.4}
+main{max-width:1050px;margin:auto;padding:28px 18px 60px}
+.ornament{color:var(--gold);letter-spacing:8px;text-align:center;margin:18px 0}
+.intro{text-align:center;max-width:760px;margin:0 auto 26px;font-size:21px;line-height:1.5}
+.intro strong{display:block;font-size:clamp(30px,5vw,43px);color:var(--green);font-weight:600;margin:8px 0}
+.intro .bride{font-size:clamp(24px,4vw,35px);color:#85581b}
+.section-title{text-align:center;font-size:clamp(27px,4vw,38px);font-weight:600;color:var(--green);margin:35px 0 18px}
+.countdowns,.events{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.panel{position:relative;border:1px solid var(--gold);outline:1px solid rgba(198,154,66,.45);outline-offset:4px;border-radius:90px 90px 18px 18px;padding:30px 22px 24px;text-align:center;background:rgba(255,252,242,.88);box-shadow:0 10px 30px rgba(58,43,12,.08)}
+.panel:before{content:"✧";display:block;font-size:30px;color:var(--gold);margin-bottom:4px}
+.panel h2{margin:0;color:var(--green);font-size:29px;font-weight:600}
+.date{font-size:20px;margin:8px 0;color:#755018}
+.time{font-size:18px;margin:0 0 18px}
+.timer{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin:18px 0}
+.time-unit{background:var(--green);color:#fff7e3;border:1px solid var(--gold);padding:12px 3px;border-radius:8px}
+.time-unit strong{display:block;font-size:clamp(22px,4vw,34px);font-weight:600;line-height:1.05}
+.time-unit span{font-family:Arial,sans-serif;font-size:9px;letter-spacing:1px;text-transform:uppercase;color:var(--gold-light)}
+.countdown-status{min-height:24px;font-size:16px;color:#755018}
+.venue{margin:42px auto 28px;max-width:700px;text-align:center;background:var(--green);color:var(--cream);border:3px double var(--gold);padding:25px 20px;border-radius:8px;transition:transform .2s ease,box-shadow .2s ease}
+.venue-link{display:block;color:inherit;text-decoration:none;border-radius:8px}
+.venue-link:hover,.venue-link:focus-visible{transform:translateY(-2px);box-shadow:0 10px 24px rgba(6,59,43,.18);outline:2px solid var(--gold);outline-offset:5px}
+.venue .directions{font-family:Arial,sans-serif;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold-light);margin-top:16px}
+.venue h2{font-size:14px;letter-spacing:5px;color:var(--gold-light);margin:0 0 12px;text-transform:uppercase}
+.venue .address{font-size:clamp(24px,4vw,34px);line-height:1.25}
+.venue .place{letter-spacing:5px;color:var(--gold-light);margin-top:10px;font-size:16px}
+.compliments{text-align:center;font-size:20px;margin-top:34px}
+.compliments em{display:block;color:#85581b;font-size:22px}
+.compliments strong{display:block;font-size:26px;color:var(--green);margin-top:5px}
+footer{text-align:center;background:var(--green);color:#ead6a1;padding:18px;font-size:14px;letter-spacing:2px}
+.actions{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin:28px auto;max-width:700px}
+.action-btn{appearance:none;border:1px solid var(--gold);background:var(--green);color:var(--cream);font-family:Arial,sans-serif;font-size:13px;letter-spacing:.4px;padding:13px 18px;border-radius:999px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:background .2s ease,transform .2s ease}
+.action-btn:hover,.action-btn:focus-visible{background:var(--green2);transform:translateY(-2px);outline:2px solid var(--gold);outline-offset:3px}
+.message{max-width:760px;text-align:center;margin:34px auto 26px;padding:24px 22px;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);font-size:clamp(21px,3vw,27px);font-style:italic;line-height:1.45;color:#755018}
+.message .small{display:block;font-size:12px;letter-spacing:3px;text-transform:uppercase;font-style:normal;color:var(--green);margin-bottom:10px}
+.reveal{position:fixed;inset:0;z-index:20;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;background:radial-gradient(ellipse at center,#0b4b36,#03251b);color:var(--cream);transition:opacity .7s ease,visibility .7s ease}
+.reveal.hidden{opacity:0;visibility:hidden;pointer-events:none}
+.reveal-inner{max-width:650px;border:1px solid var(--gold);outline:1px solid rgba(198,154,66,.5);outline-offset:7px;padding:42px 26px;background:rgba(255,248,232,.04);animation:reveal-in 1.2s ease both}
+.reveal .crescent{font-size:42px;color:var(--gold-light);margin-bottom:12px}
+.reveal h2{font-family:"Great Vibes",cursive;font-size:clamp(46px,9vw,76px);font-weight:400;color:#fff3d0;margin:12px 0}
+.reveal p{font-size:20px;line-height:1.5;margin:12px 0 24px}
+@keyframes reveal-in{from{opacity:0;transform:translateY(16px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
+@media(prefers-reduced-motion:reduce){.reveal-inner{animation:none}.reveal,.action-btn{transition:none}}
+@media(max-width:650px){.countdowns,.events{grid-template-columns:1fr}.hero{padding:42px 16px 36px}.hero:before,.hero:after{font-size:80px}.panel{max-width:460px;width:100%;margin:auto}.intro{font-size:19px}main{padding-left:22px;padding-right:22px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
 </head>
-
 <body>
+<div class="reveal" id="invitation-reveal" role="dialog" aria-modal="true" aria-labelledby="reveal-title">
+  <div class="reveal-inner">
+    <div class="crescent" aria-hidden="true">☾ ✦</div>
+    <div class="eyebrow">An invitation with love and blessings</div>
+    <h2 id="reveal-title">You Are Invited</h2>
+    <p>Join us as we celebrate the wedding of<br><strong>Bilal Ahmad Parray</strong></p>
+    <button class="action-btn" id="open-invitation" type="button">Open Invitation ✧</button>
+    <div style="margin-top:14px"><button id="skip-reveal" type="button" style="background:none;border:0;color:#ead6a1;text-decoration:underline;cursor:pointer;font:13px Arial,sans-serif">Skip animation</button></div>
+  </div>
+</div>
+<header class="hero">
+  <div class="bismillah" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+  <div class="eyebrow">With the blessings of Allah, the Most Gracious, the Most Merciful</div>
+  <p class="subtitle">We cordially invite you to the wedding celebrations of our beloved son</p>
+  <h1>Bilal Ahmad Parray</h1>
+  <div class="weds">With</div>
+  <p class="subtitle">Daughter of <strong>Mr. Farooq Ahmad Parray</strong></p>
+  <div class="ornament">✧ ─── ❈ ─── ✧</div>
+</header>
 
-    <header class="site-header" id="siteHeader">
-        <div class="container header-inner">
-            <a href="#home" class="logo">
-                <img src="images/logo/gradientlogo.webp" alt="QAYHAM" class="logo-img" />
-                <span class="logo-text">QAYHAM</span>
-            </a>
-
-            <nav class="nav" id="mainNav">
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#process">Process</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <a href="/cloudnotes/" target="_blank" class="btn btn-sm btn-sky nav-cta">Cloud Notes</a>
-                <a href="products/netdrop/downloads/NetDropSetup.exe" download class="btn btn-sm btn-sky nav-cta">
-                    Download NetDrop for Windows
-                </a>
-
-            </nav>
-
-            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+<main>
+  <section aria-labelledby="countdown-heading">
+    <h2 class="section-title" id="countdown-heading">Counting Down to the Celebrations</h2>
+    <div class="countdowns">
+      <article class="panel">
+        <h2>Mehndi Raat</h2>
+        <p class="date">Sunday, 1st November 2026</p>
+        <p class="time">4:00 PM onwards · India Standard Time</p>
+        <div class="timer" data-countdown="2026-11-01T16:00:00+05:30" aria-label="Countdown to Mehndi Raat">
+          <div class="time-unit"><strong>--</strong><span>Days</span></div>
+          <div class="time-unit"><strong>--</strong><span>Hours</span></div>
+          <div class="time-unit"><strong>--</strong><span>Minutes</span></div>
+          <div class="time-unit"><strong>--</strong><span>Seconds</span></div>
         </div>
-    </header>
-
-    <main>
-        <!-- Hero -->
-        <section class="hero" id="home">
-            <div class="hero-bg">
-                <div class="hero-orb hero-orb-1"></div>
-                <div class="hero-orb hero-orb-2"></div>
-                <div class="hero-grid"></div>
-            </div>
-            <div class="container hero-inner">
-                <div class="hero-content reveal">
-                    <div class="hero-badge">
-                        <span class="badge-dot"></span>
-                        11 apps on Google Play
-                    </div>
-                    <h1>Mobile apps built for<br /><span class="gradient-text">everyday use</span></h1>
-                    <p class="hero-desc">
-                        QAYHAM ships polished Android apps and web tools — note-taking, utilities,
-                        fitness, and more. Download free on Google Play or try Cloud Notes on the web.
-                    </p>
-                    <div class="hero-actions">
-                        <a href="#products" class="btn btn-primary">
-                            <i class="fab fa-google-play"></i>
-                            Browse on Play Store
-                        </a>
-                        <a href="/cloudnotes/" class="btn btn-ghost">Try Cloud Notes</a>
-                    </div>
-                    <div class="hero-stats">
-                        <div class="stat">
-                            <span class="stat-num">11+</span>
-                            <span class="stat-label">Live apps</span>
-                        </div>
-                        <div class="stat-divider"></div>
-                        <div class="stat">
-                            <span class="stat-num">★ 4.8</span>
-                            <span class="stat-label">Avg. rating</span>
-                        </div>
-                        <div class="stat-divider"></div>
-                        <div class="stat">
-                            <span class="stat-num">Free</span>
-                            <span class="stat-label">to download</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero-visual reveal reveal-delay">
-                    <div class="hero-card-stack">
-                        <div class="hero-showcase">
-                            <img src="images/logo/gradientlogo.webp" alt="QAYHAM" class="hero-logo" />
-                        </div>
-                        <div class="hero-float-card hero-float-1">
-                            <img src="images/products/cloudnotes.png" alt="" />
-                            <span>Cloud Notes</span>
-                        </div>
-                        <div class="hero-float-card hero-float-2">
-                            <img src="images/products/quick-units.png" alt="" />
-                            <span>Quick Units</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Products -->
-        <section class="section products-section" id="products">
-            <div class="container">
-                <div class="section-header reveal">
-                    <span class="section-tag">Our Products</span>
-                    <h2>Apps on Google Play</h2>
-                    <p>Tools we built, shipped, and maintain — available for download today.</p>
-                </div>
-
-                <div class="products-grid">
-                    <article class="product-card product-featured-banner reveal">
-                        <div class="product-badge">Featured</div>
-                        <div class="product-icon-wrap">
-                            <img src="images/products/cloudnotes.png" alt="Cloud Notes" />
-                        </div>
-                        <div class="product-body">
-                            <div class="product-rating"><span class="stars">★★★★★</span> Featured app</div>
-                            <h3>Cloud Notes</h3>
-                            <p>Sync notes across every device. Create, edit, and access your notes from phone, tablet,
-                                or desktop — online or offline.</p>
-                            <div class="product-actions">
-                                <a href="/products/cloudnotes/" class="btn btn-outline btn-sm">View app</a>
-                                <a href="/cloudnotes/" class="btn btn-primary btn-sm">Open Web App</a>
-                                <a href="https://play.google.com/store/apps/details?id=com.qayham.cloudnotes"
-                                    target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
-                                    <i class="fab fa-google-play"></i> Play Store
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="product-card reveal">
-                        <div class="product-icon-wrap">
-                            <img src="images/products/tradejournal.png" alt="Trade Journal" />
-                        </div>
-                        <div class="product-body">
-                            <div class="product-rating"><span class="stars">★★★★★</span> Google Play</div>
-                            <h3>Trade Journal</h3>
-                            <p>Trading journal and daily profit &amp; loss tracker. Log trades, review performance, and
-                                stay on top of your strategy.</p>
-                            <div class="product-actions">
-                                <a href="/products/tradejournal/" class="btn btn-outline btn-sm">View app</a>
-                                <a href="https://play.google.com/store/apps/details?id=com.qayham.tradejournal"
-                                    target="_blank" rel="noopener noreferrer" class="btn-play">
-                                    <i class="fab fa-google-play"></i> Play Store
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="product-card reveal">
-                        <div class="product-icon-wrap">
-                            <img src="images/products/whatsappgallery.png" alt="WhatsApp Gallery" />
-                        </div>
-                        <div class="product-body">
-                            <div class="product-rating"><span class="stars">★★★★★</span> Google Play</div>
-                            <h3>WhatsApp Gallery</h3>
-                            <p>Browse, preview, share, and save photos, videos, and documents from WhatsApp — fully
-                                on-device, no uploads.</p>
-                            <div class="product-actions">
-                                <a href="/products/whatsappgallery/" class="btn btn-outline btn-sm">View app</a>
-                                <a href="https://play.google.com/store/apps/details?id=com.qayham.whatsappgallery"
-                                    target="_blank" rel="noopener noreferrer" class="btn-play">
-                                    <i class="fab fa-google-play"></i> Play Store
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="product-card reveal">
-                        <div class="product-icon-wrap">
-                            <img src="images/products/trainerflow.png" alt="Trainer Flow" />
-                        </div>
-                        <div class="product-body">
-                            <div class="product-rating"><span class="stars">★★★★★</span> Google Play</div>
-                            <h3>Trainer Flow</h3>
-                            <p>Manage clients, workouts, and training schedules — a streamlined app built for personal
-                                trainers and fitness coaches.</p>
-                            <div class="product-actions">
-                                <a href="/products/trainerflow/" class="btn btn-outline btn-sm">View app</a>
-                                <a href="https://play.google.com/store/apps/details?id=com.qayham.trainerflow"
-                                    target="_blank" rel="noopener noreferrer" class="btn-play">
-                                    <i class="fab fa-google-play"></i> Play Store
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="product-card reveal">
-                        <div class="product-icon-wrap">
-                            <img src="images/products/meshchat.png" alt="MeshChat" />
-                        </div>
-                        <div class="product-body">
-                            <div class="product-rating"><span class="stars">★★★★★</span> Google Play</div>
-                            <h3>MeshChat</h3>
-                            <p>Chat with nearby devices over Bluetooth — no internet, no sign-up, no servers. Discover
-                                people around you and message offline.</p>
-                            <div class="product-actions">
-                                <a href="/products/meshchat/" class="btn btn-outline btn-sm">View app</a>
-                                <a href="https://play.google.com/store/apps/details?id=com.qayham.meshchat" target="_blank"
-                                    rel="noopener noreferrer" class="btn-play">
-                                    <i class="fab fa-google-play"></i> Play Store
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="product-card reveal">
-                        <div class="product-icon-wrap">
-                            <img src="images/products/netdrop.png" alt="NetDrop" />
-                        </div>
-                        <div class="product-body">
-                            <div class="product-rating"><span class="stars">★★★★★</span> Google Play</div>
-                            <h3>NetDrop</h3>
-                            <p>Share files between devices on your local Wi‑Fi — no cloud, no account, and no servers.
-                                Fast device-to-device transfers on networks you trust.</p>
-                            <div class="product-actions">
-                                <a href="/products/netdrop/" class="btn btn-outline btn-sm">View app</a>
-                                <a href="https://play.google.com/store/apps/details?id=com.qayham.netdrop" target="_blank"
-                                    rel="noopener noreferrer" class="btn-play">
-                                    <i class="fab fa-google-play"></i> Play Store
-                                </a>
-                                <a href="products/netdrop/downloads/NetDropSetup.exe" download class="btn btn-outline btn-sm"><i class="fab fa-windows"></i>Download for Windows</a>
-                                
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="product-card reveal">
-                        <div class="product-icon-wrap">
-                            <img src="images/products/cloudnotes.png" alt="Cloud Notes" />
-                        </div>
-                        <div class="product-body">
-                            <div class="product-rating"><span class="stars">★★★★★</span> Google Play</div>
-                            <h3>Cloud Notes</h3>
-                            <p>Sync notes across every device. Create, edit, and access your notes from phone, tablet,
-                                or desktop — online or offline.</p>
-                            <div class="product-actions">
-                                <a href="/products/cloudnotes/" class="btn btn-outline btn-sm">View app</a>
-                                <a href="/cloudnotes/" class="btn btn-sky btn-sm">Web App</a>
-                                <a href="https://play.google.com/store/apps/details?id=com.qayham.cloudnotes"
-                                    target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
-                                    <i class="fab fa-google-play"></i> Play Store
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="product-card reveal">
-                        <div class="product-icon-wrap">
-                            <img src="images/products/quick-units.png" alt="Quick Units" />
-                        </div>
-                        <div class="product-body">
-                            <div class="product-rating"><span class="stars">★★★★★</span> Google Play</div>
-                            <h3>Quick Units</h3>
-                            <p>Instant unit conversion — currencies, lengths, weights, temperatures, and more with live
-                                rates.</p>
-                            <div class="product-actions">
-                                <a href="/products/quickunits/" class="btn btn-outline btn-sm">View app</a>
-                                <a href="https://play.google.com/store/apps/details?id=com.qayham.quickunits"
-                                    target="_blank" rel="noopener noreferrer" class="btn-play">
-                                    <i class="fab fa-google-play"></i> Play Store
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="product-card reveal">
-                        <div class="product-icon-wrap">
-                            <img src="images/products/qrscanner.png" alt="QR Scanner" />
-                        </div>
-                        <div class="product-body">
-                            <div class="product-rating"><span class="stars">★★★★★</span> Google Play</div>
-                            <h3>QR Scanner &amp; Generator</h3>
-                            <p>Scan any QR or barcode. Generate codes for Wi-Fi, contacts, URLs, and more — works
-                                offline.</p>
-                            <div class="product-actions">
-                                <a href="/products/qrscanner/" class="btn btn-outline btn-sm">View app</a>
-                                <a href="https://play.google.com/store/apps/details?id=com.qayham.qrscanner" target="_blank"
-                                    rel="noopener noreferrer" class="btn-play">
-                                    <i class="fab fa-google-play"></i> Play Store
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="product-card reveal">
-                        <div class="product-icon-wrap">
-                            <img src="images/products/compounding-calculator.png" alt="Compound Calculator" />
-                        </div>
-                        <div class="product-body">
-                            <div class="product-rating"><span class="stars">★★★★★</span> Google Play</div>
-                            <h3>Compound Calculator</h3>
-                            <p>Advanced compound interest calculator with detailed breakdowns and multi-currency
-                                support.</p>
-                            <div class="product-actions">
-                                <a href="/products/compoundcalculator/" class="btn btn-outline btn-sm">View app</a>
-                                <a href="https://play.google.com/store/apps/details?id=com.bilalparray07.compoundingcalculator"
-                                    target="_blank" rel="noopener noreferrer" class="btn-play">
-                                    <i class="fab fa-google-play"></i> Play Store
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="product-card reveal">
-                        <div class="product-icon-wrap">
-                            <img src="images/products/teamawesomesozeith.png" alt="Team Awesome Sozeith" />
-                        </div>
-                        <div class="product-body">
-                            <div class="product-rating"><span class="stars">★★★★★</span> Google Play</div>
-                            <h3>Team Awesome Sozeith</h3>
-                            <p>Track your team's performance. Monitor stats of your favorite Awesomies with an intuitive
-                                interface.</p>
-                            <div class="product-actions">
-                                <a href="/products/teamawesomesozeith/" class="btn btn-outline btn-sm">View app</a>
-                                <a href="https://play.google.com/store/apps/details?id=com.qayham.teamawesomesozeith"
-                                    target="_blank" rel="noopener noreferrer" class="btn-play">
-                                    <i class="fab fa-google-play"></i> Play Store
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="product-card product-soon reveal">
-                        <div class="product-icon-wrap">
-                            <img src="images/products/retail-lifter.png" alt="Retail Lifter" />
-                        </div>
-                        <div class="product-body">
-                            <h3>Retail Lifter</h3>
-                            <p>Inventory management for retailers — optimize stock levels and streamline operations.</p>
-                            <span class="product-soon-badge">Coming Soon</span>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services -->
-        <section class="section services-section" id="services">
-            <div class="container">
-                <div class="section-header reveal">
-                    <span class="section-tag">What We Do</span>
-                    <h2>Services</h2>
-                    <p>From idea to App Store — we handle design, development, and launch.</p>
-                </div>
-
-                <div class="services-grid">
-                    <div class="service-card reveal">
-                        <div class="service-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="5" y="2" width="14" height="20" rx="2" />
-                                <line x1="12" y1="18" x2="12" y2="18.01" />
-                            </svg>
-                        </div>
-                        <h3>Mobile App Development</h3>
-                        <p>Native and cross-platform Android apps built with Flutter — fast, polished, and Play Store
-                            ready.</p>
-                    </div>
-
-                    <div class="service-card reveal">
-                        <div class="service-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="10" />
-                                <line x1="2" y1="12" x2="22" y2="12" />
-                                <path
-                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                            </svg>
-                        </div>
-                        <h3>Web Applications</h3>
-                        <p>Responsive web apps that work everywhere — PWA-ready, cloud-synced, and built for
-                            performance.</p>
-                    </div>
-
-                    <div class="service-card reveal">
-                        <div class="service-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="16 18 22 12 16 6" />
-                                <polyline points="8 6 2 12 8 18" />
-                            </svg>
-                        </div>
-                        <h3>Custom Software</h3>
-                        <p>Tailored tools for your business — CRM, dashboards, automation, and integrations that fit
-                            your workflow.</p>
-                    </div>
-
-                    <div class="service-card reveal">
-                        <div class="service-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                            </svg>
-                        </div>
-                        <h3>Maintenance &amp; Support</h3>
-                        <p>Ongoing updates, bug fixes, and feature additions to keep your software running smoothly.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Process -->
-        <section class="section process-section" id="process">
-            <div class="container">
-                <div class="section-header reveal">
-                    <span class="section-tag">How We Work</span>
-                    <h2>From concept to launch</h2>
-                    <p>A clear, collaborative process — no surprises.</p>
-                </div>
-
-                <div class="process-grid">
-                    <div class="process-step reveal">
-                        <div class="process-num">01</div>
-                        <h3>Discover</h3>
-                        <p>We learn your goals, audience, and requirements. You get a clear scope and timeline before
-                            any code is written.</p>
-                    </div>
-                    <div class="process-step reveal">
-                        <div class="process-num">02</div>
-                        <h3>Build</h3>
-                        <p>Design and development in focused sprints. You see progress early and often with regular
-                            check-ins.</p>
-                    </div>
-                    <div class="process-step reveal">
-                        <div class="process-num">03</div>
-                        <h3>Launch</h3>
-                        <p>App Store submission, deployment, and handoff — plus ongoing support to keep things running.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA -->
-        <section class="cta-section">
-            <div class="container">
-                <div class="cta-card reveal">
-                    <h2>Have a project in mind?</h2>
-                    <p>Tell us what you're building. We'll get back to you with a plan and a quote — no commitment
-                        required.</p>
-                    <div class="cta-actions">
-                        <a href="https://wa.me/919682318133" target="_blank" rel="noopener noreferrer"
-                            class="btn btn-light">
-                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-                        </a>
-                        <a href="#contact" class="btn btn-ghost-light">Send a message</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact -->
-        <section class="section contact-section" id="contact">
-            <div class="container">
-                <div class="section-header reveal">
-                    <span class="section-tag">Contact</span>
-                    <h2>Get in touch</h2>
-                    <p>Questions, partnerships, or custom projects — we'd love to hear from you.</p>
-                </div>
-
-                <div class="contact-grid">
-                    <div class="contact-info reveal">
-                        <a href="https://wa.me/919682318133" target="_blank" rel="noopener noreferrer"
-                            class="contact-card">
-                            <div class="contact-card-icon whatsapp">
-                                <i class="fab fa-whatsapp"></i>
-                            </div>
-                            <div>
-                                <h4>WhatsApp</h4>
-                                <p>+91 96823 18133</p>
-                            </div>
-                        </a>
-                        <a href="mailto:parraybilal34@gmail.com" class="contact-card">
-                            <div class="contact-card-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path
-                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                                    <polyline points="22,6 12,13 2,6" />
-                                </svg>
-                            </div>
-                            <div>
-                                <h4>Email</h4>
-                                <p>parraybilal34@gmail.com</p>
-                            </div>
-                        </a>
-                        <div class="contact-card">
-                            <div class="contact-card-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10" />
-                                    <polyline points="12 6 12 12 16 14" />
-                                </svg>
-                            </div>
-                            <div>
-                                <h4>Response time</h4>
-                                <p>Usually within 24 hours</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <form class="contact-form reveal" id="contactForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" class="form-control" placeholder="Your name" required />
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" class="form-control" placeholder="you@email.com"
-                                    required />
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" class="form-control" placeholder="What's this about?" />
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" class="form-control" placeholder="Tell us about your project..."
-                                required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">
-                            Send Message
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M5 12h14M12 5l7 7-7 7" />
-                            </svg>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="#home" class="logo">
-                        <img src="images/logo/gradientlogo.webp" alt="QAYHAM" class="logo-img" />
-                        <span class="logo-text">QAYHAM</span>
-                    </a>
-                    <p>Building mobile apps and web tools that people actually use.</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Navigate</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#products">Products</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Products</h4>
-                    <ul>
-                        <li><a href="/cloudnotes/">Cloud Notes</a></li>
-                        <li><a href="https://play.google.com/store/apps/details?id=com.qayham.quickunits"
-                                target="_blank" rel="noopener noreferrer">Quick Units</a></li>
-                        <li><a href="https://play.google.com/store/apps/details?id=com.qayham.qrscanner" target="_blank"
-                                rel="noopener noreferrer">QR Scanner</a></li>
-                        <li><a href="https://play.google.com/store/apps/details?id=com.qayham.tradejournal"
-                                target="_blank" rel="noopener noreferrer">Trade Journal</a></li>
-                        <li><a href="https://play.google.com/store/apps/details?id=com.qayham.whatsappgallery"
-                                target="_blank" rel="noopener noreferrer">WhatsApp Gallery</a></li>
-                        <li><a href="https://play.google.com/store/apps/details?id=com.qayham.trainerflow"
-                                target="_blank" rel="noopener noreferrer">Trainer Flow</a></li>
-                        <li><a href="https://play.google.com/store/apps/details?id=com.qayham.meshchat" target="_blank"
-                                rel="noopener noreferrer">MeshChat</a></li>
-                        <li><a href="https://play.google.com/store/apps/details?id=com.qayham.netdrop" target="_blank"
-                                rel="noopener noreferrer">NetDrop</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="/privacy.html">Privacy Policy</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 QAYHAM. All rights reserved.</p>
-            </div>
+        <div class="countdown-status" aria-live="polite">Until Mehndi Raat</div>
+      </article>
+      <article class="panel">
+        <h2>Wedding Banquet</h2>
+        <p class="date">Monday, 2nd November 2026</p>
+        <p class="time">12:30 PM onwards · India Standard Time</p>
+        <div class="timer" data-countdown="2026-11-02T12:30:00+05:30" aria-label="Countdown to Wedding Banquet">
+          <div class="time-unit"><strong>--</strong><span>Days</span></div>
+          <div class="time-unit"><strong>--</strong><span>Hours</span></div>
+          <div class="time-unit"><strong>--</strong><span>Minutes</span></div>
+          <div class="time-unit"><strong>--</strong><span>Seconds</span></div>
         </div>
-    </footer>
+        <div class="countdown-status" aria-live="polite">Until the Wedding Banquet</div>
+      </article>
+    </div>
+  </section>
 
-    <a href="https://wa.me/919682318133" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
-        aria-label="Chat on WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+  <div class="ornament">✧ ─── ❈ ─── ✧</div>
+  <section class="message">
+    <span class="small">A heartfelt invitation</span>
+    Your presence and blessings will make our celebration even more special. We look forward to sharing these joyful moments with you.
+  </section>
+  <div class="actions" aria-label="Wedding invitation actions">
+    <button class="action-btn" type="button" id="calendar-mehndi">Add Mehndi to Calendar</button>
+    <button class="action-btn" type="button" id="calendar-wedding">Add Wedding to Calendar</button>
+    <button class="action-btn" type="button" id="share-invitation">Share Invitation ↗</button>
+  </div>
+  <a class="venue-link" href="https://www.google.com/maps/dir/?api=1&amp;destination=34.113194440645216%2C74.68085812357977" target="_blank" rel="noopener noreferrer" aria-label="Open directions to Abdul Qayoom Parray’s Residence in Google Maps">
+    <section class="venue" aria-labelledby="venue-heading">
+      <h2 id="venue-heading">Venue · Tap for Directions</h2>
+      <div class="address">At Abdul Qayoom Parray’s Residence</div>
+      <div class="place">SOZEITH</div>
+      <div class="directions">Open location in Google Maps ↗</div>
+    </section>
+  </a>
+  <section class="compliments">
+    <em>With best compliments from</em>
+    <strong>Abdul Qayoom Parray and Family</strong>
+  </section>
+</main>
+<footer>WITH JOYFUL HEARTS, WE LOOK FORWARD TO CELEBRATING WITH YOU</footer>
 
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path d="M18 15l-6-6-6 6" />
-        </svg>
-    </button>
+<script>
+(function () {
+  const timers = document.querySelectorAll("[data-countdown]");
+  const reveal = document.getElementById("invitation-reveal");
+  function closeReveal() {
+    reveal.classList.add("hidden");
+    document.body.style.overflow = "";
+    try { sessionStorage.setItem("bilalInvitationOpened", "1"); } catch (e) {}
+  }
+  let alreadyOpened = false;
+  try { alreadyOpened = sessionStorage.getItem("bilalInvitationOpened") === "1"; } catch (e) {}
+  if (alreadyOpened) reveal.classList.add("hidden");
+  else document.body.style.overflow = "hidden";
+  document.getElementById("open-invitation").addEventListener("click", closeReveal);
+  document.getElementById("skip-reveal").addEventListener("click", closeReveal);
 
-    <script src="app.js"></script>
+  function downloadCalendar(eventName, start, end, description) {
+    const stamp = value => value.replace(/[-:]/g, "").replace(/\.\d{3}/, "");
+    const ics = [
+      "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Bilal Ahmad Parray//Wedding Invitation//EN", "CALSCALE:GREGORIAN", "METHOD:PUBLISH",
+      "BEGIN:VEVENT", "UID:" + eventName.toLowerCase().replace(/[^a-z0-9]+/g, "-") + "-bilal-wedding@invitation.local",
+      "DTSTAMP:" + new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d{3}/, ""),
+      "DTSTART:" + stamp(start), "DTEND:" + stamp(end), "SUMMARY:" + eventName,
+      "DESCRIPTION:" + description, "LOCATION:Abdul Qayoom Parray’s Residence, Sozeith", "URL:https://www.google.com/maps/dir/?api=1&destination=34.113194440645216%2C74.68085812357977",
+      "END:VEVENT", "END:VCALENDAR"
+    ].join("\r\n");
+    const blob = new Blob([ics], { type: "text/calendar;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a"); link.href = url; link.download = eventName.toLowerCase().replace(/[^a-z0-9]+/g, "-") + ".ics";
+    document.body.appendChild(link); link.click(); link.remove(); URL.revokeObjectURL(url);
+  }
+  document.getElementById("calendar-mehndi").addEventListener("click", () => downloadCalendar("Mehndi Raat", "20261101T103000Z", "20261101T133000Z", "Mehndi Raat at 4:00 PM India Standard Time."));
+  document.getElementById("calendar-wedding").addEventListener("click", () => downloadCalendar("Wedding Banquet", "20261102T070000Z", "20261102T100000Z", "Wedding Banquet at 12:30 PM India Standard Time."));
+  document.getElementById("share-invitation").addEventListener("click", async () => {
+    const shareData = { title: "Bilal Ahmad Parray | Wedding Invitation", text: "You are invited to the wedding celebrations of Bilal Ahmad Parray. Mehndi Raat: 1 November 2026 at 4:00 PM. Wedding Banquet: 2 November 2026 at 12:30 PM. Venue: Abdul Qayoom Parray’s Residence, Sozeith.", url: window.location.href };
+    try {
+      if (navigator.share) await navigator.share(shareData);
+      else if (navigator.clipboard && window.isSecureContext) { await navigator.clipboard.writeText(shareData.text + "\n" + window.location.href); alert("Invitation details copied. You can paste them into WhatsApp."); }
+      else { window.prompt("Copy and share this invitation:", shareData.text + "\n" + window.location.href); }
+    } catch (error) { if (error.name !== "AbortError") alert("Sharing was not available on this device. You can copy the website link from your browser address bar."); }
+  });
+  function updateCountdown(timer) {
+    const target = new Date(timer.dataset.countdown).getTime();
+    const now = Date.now();
+    const remaining = target - now;
+    const units = timer.querySelectorAll(".time-unit strong");
+    const status = timer.parentElement.querySelector(".countdown-status");
+    if (remaining <= 0) {
+      units.forEach(unit => unit.textContent = "0");
+      status.textContent = remaining > -86400000 ? "The celebration is underway or has begun!" : "This celebration date has passed.";
+      return;
+    }
+    const days = Math.floor(remaining / 86400000);
+    const hours = Math.floor((remaining % 86400000) / 3600000);
+    const minutes = Math.floor((remaining % 3600000) / 60000);
+    const seconds = Math.floor((remaining % 60000) / 1000);
+    [days, hours, minutes, seconds].forEach((value, index) => units[index].textContent = String(value).padStart(2, "0"));
+    status.textContent = "Time remaining";
+  }
+  function tick() { timers.forEach(updateCountdown); }
+  tick();
+  window.setInterval(tick, 1000);
+})();
+</script>
 </body>
-
 </html>
