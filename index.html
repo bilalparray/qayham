@@ -1,263 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#073b2b">
-<meta name="description" content="A premium countdown to the wedding celebrations of Bilal Ahmad Parray, with event dates and location details.">
-<title>Bilal Ahmad Parray | Wedding Countdown</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bilal Ahmad Parray · Wedding Celebration · 1–2 November 2026</title>
+<meta name="description" content="The wedding celebration of Bilal Ahmad Parray and the daughter of Mr. Farooq Ahmad Parray. Mehndi Raat 1 November 2026, Wedding Banquet 2 November 2026, Sozeith.">
+<meta name="theme-color" content="#063B2E">
+<meta property="og:title" content="The Wedding Celebration of Bilal Ahmad Parray">
+<meta property="og:description" content="Mehndi Raat: Sun 1 Nov 2026, 4:00 PM. Wedding Banquet: Mon 2 Nov 2026, 12:30 PM. Sozeith.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌙%3C/text%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Mulish:wght@400;600&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
 <style>
-:root{--green:#063b2b;--green2:#0b4b36;--gold:#c69a42;--gold-light:#f0d99a;--cream:#fff8e8;--ink:#18372b}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;color:var(--ink);font-family:"Cormorant Garamond",Georgia,serif;background:#f8f0dc;background-image:radial-gradient(ellipse at top,rgba(255,255,255,.92),transparent 65%),linear-gradient(135deg,#f7efd9,#fffaf0 48%,#efe0bc)}
-.hero{position:relative;overflow:hidden;text-align:center;padding:56px 20px 46px;background:var(--green);color:var(--cream);border-bottom:5px double var(--gold)}
-.hero:before,.hero:after{content:"✦";position:absolute;color:var(--gold-light);font-size:150px;opacity:.18;top:12px}
-.hero:before{left:3%}.hero:after{right:3%}
-.bismillah{font-size:clamp(25px,4vw,38px);color:var(--gold-light);margin-bottom:14px}
-.eyebrow{letter-spacing:4px;text-transform:uppercase;font-size:12px;color:#ead6a1}
-.hero h1{font-family:"Great Vibes",cursive;font-size:clamp(54px,10vw,100px);font-weight:400;line-height:1.1;margin:10px 0;color:#fff3d0}
-.weds{letter-spacing:7px;text-transform:uppercase;color:var(--gold-light);font-size:15px;margin:8px}
-.hero .subtitle{font-size:clamp(17px,3vw,23px);margin:18px auto 0;max-width:680px;line-height:1.4}
-main{max-width:1050px;margin:auto;padding:28px 18px 60px}
-.ornament{color:var(--gold);letter-spacing:8px;text-align:center;margin:18px 0}
-.intro{text-align:center;max-width:760px;margin:0 auto 26px;font-size:21px;line-height:1.5}
-.intro strong{display:block;font-size:clamp(30px,5vw,43px);color:var(--green);font-weight:600;margin:8px 0}
-.intro .bride{font-size:clamp(24px,4vw,35px);color:#85581b}
-.section-title{text-align:center;font-size:clamp(27px,4vw,38px);font-weight:600;color:var(--green);margin:35px 0 18px}
-.countdowns,.events{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
-.panel{position:relative;border:1px solid var(--gold);outline:1px solid rgba(198,154,66,.45);outline-offset:4px;border-radius:90px 90px 18px 18px;padding:30px 22px 24px;text-align:center;background:rgba(255,252,242,.88);box-shadow:0 10px 30px rgba(58,43,12,.08)}
-.panel:before{content:"✧";display:block;font-size:30px;color:var(--gold);margin-bottom:4px}
-.panel h2{margin:0;color:var(--green);font-size:29px;font-weight:600}
-.date{font-size:20px;margin:8px 0;color:#755018}
-.time{font-size:18px;margin:0 0 18px}
-.timer{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin:18px 0}
-.time-unit{background:var(--green);color:#fff7e3;border:1px solid var(--gold);padding:12px 3px;border-radius:8px}
-.time-unit strong{display:block;font-size:clamp(22px,4vw,34px);font-weight:600;line-height:1.05}
-.time-unit span{font-family:Arial,sans-serif;font-size:9px;letter-spacing:1px;text-transform:uppercase;color:var(--gold-light)}
-.countdown-status{min-height:24px;font-size:16px;color:#755018}
-.venue{margin:42px auto 28px;max-width:700px;text-align:center;background:var(--green);color:var(--cream);border:3px double var(--gold);padding:25px 20px;border-radius:8px;transition:transform .2s ease,box-shadow .2s ease}
-.venue-link{display:block;color:inherit;text-decoration:none;border-radius:8px}
-.venue-link:hover,.venue-link:focus-visible{transform:translateY(-2px);box-shadow:0 10px 24px rgba(6,59,43,.18);outline:2px solid var(--gold);outline-offset:5px}
-.venue .directions{font-family:Arial,sans-serif;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold-light);margin-top:16px}
-.venue h2{font-size:14px;letter-spacing:5px;color:var(--gold-light);margin:0 0 12px;text-transform:uppercase}
-.venue .address{font-size:clamp(24px,4vw,34px);line-height:1.25}
-.venue .place{letter-spacing:5px;color:var(--gold-light);margin-top:10px;font-size:16px}
-.compliments{text-align:center;font-size:20px;margin-top:34px}
-.compliments em{display:block;color:#85581b;font-size:22px}
-.compliments strong{display:block;font-size:26px;color:var(--green);margin-top:5px}
-footer{text-align:center;background:var(--green);color:#ead6a1;padding:18px;font-size:14px;letter-spacing:2px}
-.actions{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin:28px auto;max-width:700px}
-.action-btn{appearance:none;border:1px solid var(--gold);background:var(--green);color:var(--cream);font-family:Arial,sans-serif;font-size:13px;letter-spacing:.4px;padding:13px 18px;border-radius:999px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:background .2s ease,transform .2s ease}
-.action-btn:hover,.action-btn:focus-visible{background:var(--green2);transform:translateY(-2px);outline:2px solid var(--gold);outline-offset:3px}
-.message{max-width:760px;text-align:center;margin:34px auto 26px;padding:24px 22px;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);font-size:clamp(21px,3vw,27px);font-style:italic;line-height:1.45;color:#755018}
-.message .small{display:block;font-size:12px;letter-spacing:3px;text-transform:uppercase;font-style:normal;color:var(--green);margin-bottom:10px}
-.reveal{position:fixed;inset:0;z-index:20;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;background:radial-gradient(ellipse at center,#0b4b36,#03251b);color:var(--cream);transition:opacity .7s ease,visibility .7s ease}
-.reveal.hidden{opacity:0;visibility:hidden;pointer-events:none}
-.reveal-inner{max-width:650px;border:1px solid var(--gold);outline:1px solid rgba(198,154,66,.5);outline-offset:7px;padding:42px 26px;background:rgba(255,248,232,.04);animation:reveal-in 1.2s ease both}
-.reveal .crescent{font-size:42px;color:var(--gold-light);margin-bottom:12px}
-.reveal h2{font-family:"Great Vibes",cursive;font-size:clamp(46px,9vw,76px);font-weight:400;color:#fff3d0;margin:12px 0}
-.reveal p{font-size:20px;line-height:1.5;margin:12px 0 24px}
-@keyframes reveal-in{from{opacity:0;transform:translateY(16px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
-@media(prefers-reduced-motion:reduce){.reveal-inner{animation:none}.reveal,.action-btn{transition:none}}
-@media(max-width:650px){.countdowns,.events{grid-template-columns:1fr}.hero{padding:42px 16px 36px}.hero:before,.hero:after{font-size:80px}.panel{max-width:460px;width:100%;margin:auto}.intro{font-size:19px}main{padding-left:22px;padding-right:22px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+:root{--em:#063B2E;--em2:#0A4F3D;--em3:#042A21;--gold:#C9A35B;--champ:#EBD9A8;--ivory:#FBF6E9;--ink:#0B2A22;
+--serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;--sans:"Mulish",system-ui,-apple-system,"Segoe UI",sans-serif;
+--star:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64' fill='none' stroke='%23C9A35B' stroke-opacity='.16' stroke-width='1'%3E%3Cpath d='M32 4l6 14 14-6-6 14 14 6-14 6 6 14-14-6-6 14-6-14-14 6 6-14-14-6 14-6-6-14 14 6z'/%3E%3Ccircle cx='32' cy='32' r='6'/%3E%3C/svg%3E")}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);background:var(--em);background-image:var(--star),radial-gradient(ellipse at 50% 0,var(--em2),var(--em3) 80%);color:var(--ivory);line-height:1.6;overflow-x:hidden;padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
+h1,h2,h3,.serif{font-family:var(--serif);font-weight:500}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--champ);outline-offset:3px}
+.gold{color:var(--champ)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+/* intro (pure CSS so it can never block the page) */
+#intro{position:fixed;inset:0;z-index:50;background:radial-gradient(circle at 50% 45%,#0B5A45 0,var(--em3) 62%);overflow:hidden;display:grid;place-items:center;text-align:center;padding:24px;animation:introOut 1.3s ease 6.2s forwards}
+#intro svg{position:absolute;height:auto}#intro .frame{width:min(86vw,440px);max-height:92vh}#intro .rose{width:min(130vw,820px);opacity:0;fill:none;stroke:#C9A35B;stroke-width:.35;animation:roseIn 2.5s ease .1s forwards,spin 90s linear infinite}
+#intro path,#intro circle{stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 2.8s ease .3s forwards}#intro .frame path{animation-delay:1.2s;animation-duration:3s}#intro .frame path+path{animation-delay:1.8s}
+#intro .in{position:relative;display:grid;justify-items:center}#intro .k{font-family:var(--serif);font-style:italic;color:var(--champ);font-size:1.2rem;animation:rise 1.2s ease 2.6s both}#intro .ln{height:1px;width:min(60vw,240px);background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:16px 0 2px;transform:scaleX(0);animation:grow 1.4s ease 4.2s forwards}
+#intro h2{font-size:clamp(2.2rem,10vw,3.4rem);line-height:1.1;text-wrap:balance;color:var(--champ);animation:name 2s cubic-bezier(.2,.7,.2,1) 3.2s both}
+#intro .msg{font-style:italic;font-family:var(--serif);font-size:1.2rem;color:var(--ivory);margin-top:14px;max-width:16em;animation:rise 1.4s ease 4.6s both}
+@keyframes draw{to{stroke-dashoffset:0}}@keyframes roseIn{to{opacity:.4}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes grow{to{transform:scaleX(1)}}@keyframes name{from{opacity:0;letter-spacing:.3em;filter:blur(8px)}to{opacity:1;letter-spacing:.01em;filter:none}}
+@keyframes rise{from{opacity:0;transform:translateY(18px);filter:blur(4px)}to{opacity:1;transform:none;filter:none}}
+@keyframes introOut{to{opacity:0;visibility:hidden;transform:scale(1.12)}}
+/* nav */
 
-/* Additional premium countdown sections */
-.section-kicker{font-family:Arial,sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#9a742e;text-align:center;margin:0 0 8px}
-.detail-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:26px 0 42px}
-.detail-card{background:rgba(255,252,242,.8);border:1px solid rgba(198,154,66,.75);border-radius:14px;padding:23px 18px;text-align:center;box-shadow:0 8px 24px rgba(58,43,12,.055)}
-.detail-card .symbol{font-size:28px;color:var(--gold);margin-bottom:9px}
-.detail-card h3{margin:0 0 8px;font-size:23px;color:var(--green);font-weight:600}
-.detail-card p{margin:0;font-size:18px;line-height:1.4}
-.timeline{max-width:760px;margin:22px auto 42px;position:relative;padding:4px 0}
-.timeline:before{content:"";position:absolute;top:14px;bottom:14px;left:27px;width:1px;background:linear-gradient(var(--gold),rgba(198,154,66,.2))}
-.timeline-item{position:relative;padding:0 0 26px 70px}
-.timeline-item:last-child{padding-bottom:0}
-.timeline-dot{position:absolute;left:17px;top:3px;width:21px;height:21px;border-radius:50%;background:var(--green);border:2px solid var(--gold);box-shadow:0 0 0 4px rgba(198,154,66,.12)}
-.timeline-item .when{font-family:Arial,sans-serif;text-transform:uppercase;letter-spacing:1.4px;font-size:11px;color:#926d2d;margin-bottom:5px}
-.timeline-item h3{margin:0;color:var(--green);font-size:27px;font-weight:600}
-.timeline-item p{margin:4px 0 0;font-size:18px;line-height:1.4}
-@media(max-width:650px){.timeline-item h3{font-size:25px}}
 
+
+/* hero */
+.hero{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:32px 18px 48px;position:relative}
+.arch{width:min(100%,560px);padding:56px 18px 30px;border:1px solid var(--gold);border-radius:999px 999px 18px 18px;position:relative;background:linear-gradient(rgba(4,42,33,.55),rgba(4,42,33,.25))}
+.arch:before{content:"";position:absolute;inset:7px;border:1px solid rgba(201,163,91,.45);border-radius:inherit;pointer-events:none}
+.arch>*{position:relative}
+.bism{font-family:Amiri,"Noto Naskh Arabic","Traditional Arabic",serif;font-size:clamp(1.5rem,6.5vw,2rem);color:var(--champ);line-height:1.5}.kicker{font-family:var(--serif);font-style:italic;color:var(--champ);font-size:1.2rem;margin-top:30px}
+.names{font-size:clamp(2.1rem,9.5vw,3.6rem);line-height:1.08;margin:6px 0;text-wrap:balance;background:linear-gradient(100deg,var(--champ) 30%,#fff 50%,var(--champ) 70%) 0 0/250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shim 7s ease-in-out infinite}
+@keyframes shim{0%,60%{background-position:100% 0}100%{background-position:-50% 0}}
+.amp{font-size:2rem;color:var(--gold);font-family:var(--serif);font-style:italic}
+.bride{font-size:clamp(1.4rem,6vw,2rem);line-height:1.2;text-wrap:balance}
+.div{display:flex;align-items:center;gap:10px;justify-content:center;color:var(--gold);margin:14px auto;max-width:260px}
+.div:before,.div:after{content:"";height:1px;flex:1;background:linear-gradient(90deg,transparent,var(--gold))}
+.div:after{transform:scaleX(-1)}
+.tabs{display:flex;gap:8px;margin:18px 0 12px;justify-content:center;flex-wrap:wrap}
+.tab{font:600 .9rem var(--sans);background:transparent;color:var(--champ);border:1px solid rgba(201,163,91,.6);border-radius:999px;padding:11px 16px;min-height:44px;cursor:pointer;transition:.25s}
+.tab[aria-pressed=true]{background:var(--gold);color:var(--em3);border-color:var(--gold)}
+.tab small{display:block;font-weight:400;font-size:.75rem;opacity:.85}
+.cd{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:6px auto 8px;max-width:420px}
+.u{border:1px solid rgba(201,163,91,.5);border-radius:12px;padding:12px 2px 8px;background:rgba(4,42,33,.6)}
+.u b{display:block;font:500 clamp(2rem,10vw,3rem)/1 var(--serif);font-variant-numeric:tabular-nums;color:var(--ivory)}
+.u b.tick{animation:tick .45s ease}
+@keyframes tick{from{opacity:.2;transform:translateY(-8px)}to{opacity:1;transform:none}}
+.u span{font-size:.72rem;color:var(--champ);letter-spacing:.06em}
+.status{min-height:1.6em;font-family:var(--serif);font-style:italic;font-size:1.2rem;color:var(--champ)}
+.when{font-size:.95rem;margin-top:4px}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:600 .95rem var(--sans);text-decoration:none;cursor:pointer;border-radius:999px;padding:12px 22px;min-height:46px;border:1px solid var(--gold);background:var(--gold);color:var(--em3);transition:transform .2s,background .2s,box-shadow .2s;max-width:100%}
+.btn:hover{background:var(--champ);box-shadow:0 6px 20px rgba(0,0,0,.3)}
+.btn:active{transform:scale(.97)}
+.btn.o{background:transparent;color:var(--champ)}
+.btn.o:hover{background:rgba(201,163,91,.15)}
+.row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+/* sections */
+section{padding:64px 18px;max-width:1000px;margin:0 auto;text-align:center}
+section>h2{font-size:clamp(2rem,7vw,2.8rem)}
+.cards{display:grid;gap:22px;margin-top:30px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.card{border-radius:6px 6px 120px 120px/6px 6px 40px 40px;padding:34px 22px 38px;position:relative}
+.card.m{background:linear-gradient(160deg,#1E6B45,#0C4A33);color:var(--ivory);border:1px solid var(--gold);outline:1px solid rgba(201,163,91,.6);outline-offset:-8px;border-radius:24px}.card.m h3{color:var(--champ)}
+.card.w{background:var(--em3);border:2px solid var(--gold);outline:1px solid rgba(201,163,91,.5);outline-offset:-9px;border-radius:140px 140px 10px 10px;padding-top:60px}
+.date{display:inline-grid;place-items:center;width:92px;height:92px;border:1px solid var(--gold);border-radius:50%;margin-bottom:12px;outline:1px dashed var(--gold);outline-offset:4px}
+.date b{font:600 2.3rem/1 var(--serif)}
+.date i{font:italic 500 1rem var(--serif)}
+.card h3{font-size:2rem}
+.card .day{margin:2px 0 14px}
+.card.m .btn.o{color:var(--champ);border-color:var(--gold)}
+.card.m .btn.o:hover{background:rgba(201,163,91,.15)}
+.card p.t{font:500 1.35rem var(--serif)}
+.venue{background:var(--star),linear-gradient(180deg,#0A4F3D,#042A21);color:var(--ivory);max-width:none;border-top:3px double var(--gold);border-bottom:3px double var(--gold)}
+.venue .in{max-width:760px;margin:0 auto}
+.venue .div{color:var(--gold)}
+.map{margin:26px auto 22px;border:1px solid var(--gold);padding:6px;border-radius:200px 200px 10px 10px;overflow:hidden;background:var(--em3);height:300px;position:relative}
+.map iframe{width:100%;height:100%;border:0;border-radius:194px 194px 6px 6px;display:block}
+.map .fb{position:absolute;inset:0;display:grid;place-items:center;padding:60px 20px 20px;z-index:0;font-family:var(--serif);font-size:1.2rem}
+.map iframe{position:relative;z-index:1}
+.venue h2{color:var(--champ)}
+
+
+.coords{font-size:.8rem;opacity:.75;margin-top:14px}
+.quote{font:italic 500 clamp(1.5rem,5.5vw,2.2rem)/1.35 var(--serif);max-width:20em;margin:0 auto;text-wrap:balance}
+.share{margin-top:26px}
+.close{border:1px solid var(--gold);outline:1px solid rgba(201,163,91,.4);outline-offset:6px;max-width:560px;margin:20px auto 70px;border-radius:12px}
+.close p{font-style:italic;font-family:var(--serif);font-size:1.2rem;color:var(--champ)}
+.close h2{font-size:clamp(1.8rem,7vw,2.6rem)}
+#toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom));transform:translate(-50%,30px);background:var(--ivory);color:var(--ink);padding:12px 20px;border-radius:999px;opacity:0;pointer-events:none;transition:.35s;z-index:60;font-weight:600;max-width:90vw;text-align:center;box-shadow:0 8px 30px rgba(0,0,0,.4)}
+#toast.on{opacity:1;transform:translate(-50%,0)}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .9s,transform .9s}
+.rv.on,.nojs .rv{opacity:1;transform:none}
+.p{position:fixed;width:4px;height:4px;border-radius:50%;background:var(--champ);opacity:0;pointer-events:none;animation:float 14s linear infinite;z-index:1}
+@keyframes float{0%{transform:translateY(105vh);opacity:0}15%,80%{opacity:.5}100%{transform:translateY(-10vh) translateX(30px);opacity:0}}
+@media (prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}#intro{display:none}.rv{opacity:1;transform:none}.p{display:none}.names{color:var(--champ);background:none}}
 </style>
 </head>
-<body>
-<div class="reveal" id="invitation-reveal" role="dialog" aria-modal="true" aria-labelledby="reveal-title">
-  <div class="reveal-inner">
-    <div class="crescent" aria-hidden="true">☾ ✦</div>
-    <div class="eyebrow">Wedding countdown</div>
-    <h2 id="reveal-title">Wedding Countdown</h2>
-    <p>Counting down to the wedding celebrations of<br><strong>Bilal Ahmad Parray</strong></p>
-    <button class="action-btn" id="open-invitation" type="button">View Countdown ✧</button>
-  </div>
+<body class="nojs">
+<div id="intro" aria-hidden="true">
+  <svg class="rose" viewBox="0 0 200 200"><path d="M30 30H170V170H30Z"/><path d="M100 0L200 100 100 200 0 100Z"/><circle cx="100" cy="100" r="95"/><circle cx="100" cy="100" r="60"/><circle cx="100" cy="100" r="28"/></svg><svg class="frame" viewBox="0 0 400 560" fill="none" stroke="#C9A35B" stroke-width="1.4"><path d="M20 540V220C20 110 100 30 200 20c100 10 180 90 180 200v320z"/><path d="M40 530V222C40 124 112 50 200 40c88 10 160 84 160 182v308z" stroke-opacity=".6"/><path d="M200 70l12 26 28-10-10 28 26 12-26 12 10 28-28-10-12 26-12-26-28 10 10-28-26-12 26-12-10-28 28 10z"/></svg>
+  <div class="in"><p class="k">The Wedding Celebration of</p><h2>Bilal Ahmad Parray</h2><div class="ln"></div><p class="msg">A Celebration of Love, Family &amp; Togetherness</p></div>
 </div>
-<header class="hero">
-  <div class="bismillah" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
-  <div class="eyebrow">With the blessings of Allah, the Most Gracious, the Most Merciful</div>
-  <p class="subtitle">Wedding celebrations · November 2026</p>
-  <h1>Bilal Ahmad Parray</h1>
-  <div class="weds">Wedding celebrations</div>
-  <p class="subtitle">Bride’s family: <strong>Mr. Farooq Ahmad Parray</strong></p>
-  <div class="ornament">✧ ─── ❈ ─── ✧</div>
-</header>
+
+
 
 <main>
-  <section aria-labelledby="countdown-heading">
-    <h2 class="section-title" id="countdown-heading">Countdown to the Event Dates</h2>
-    <div class="countdowns">
-      <article class="panel">
-        <h2>Mehndi Raat</h2>
-        <p class="date">Sunday, 1st November 2026</p>
-        <p class="time">4:00 PM onwards · India Standard Time</p>
-        <div class="timer" data-countdown="2026-11-01T16:00:00+05:30" aria-label="Countdown to Mehndi Raat">
-          <div class="time-unit"><strong>--</strong><span>Days</span></div>
-          <div class="time-unit"><strong>--</strong><span>Hours</span></div>
-          <div class="time-unit"><strong>--</strong><span>Minutes</span></div>
-          <div class="time-unit"><strong>--</strong><span>Seconds</span></div>
-        </div>
-        <div class="countdown-status" aria-live="polite">Until Mehndi Raat</div>
-      </article>
-      <article class="panel">
-        <h2>Wedding Banquet</h2>
-        <p class="date">Monday, 2nd November 2026</p>
-        <p class="time">12:30 PM onwards · India Standard Time</p>
-        <div class="timer" data-countdown="2026-11-02T12:30:00+05:30" aria-label="Countdown to Wedding Banquet">
-          <div class="time-unit"><strong>--</strong><span>Days</span></div>
-          <div class="time-unit"><strong>--</strong><span>Hours</span></div>
-          <div class="time-unit"><strong>--</strong><span>Minutes</span></div>
-          <div class="time-unit"><strong>--</strong><span>Seconds</span></div>
-        </div>
-        <div class="countdown-status" aria-live="polite">Until the Wedding Banquet</div>
-      </article>
+<header class="hero" id="countdown">
+  <div class="arch">
+    <p class="bism" lang="ar" dir="rtl">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+    <p class="kicker" style="margin-top:20px">The Wedding Celebration of</p>
+    <h1 class="names">Bilal Ahmad Parray</h1>
+    <div class="amp">&amp;</div>
+    <p class="bride serif">Daughter of Mr. Farooq Ahmad Parray</p>
+    <div class="div" aria-hidden="true">✦</div>
+    <div class="tabs" role="group" aria-label="Choose event">
+      <button class="tab" data-ev="mehndi" aria-pressed="true">Mehndi Raat<small>Sun, 1 Nov 2026</small></button>
+      <button class="tab" data-ev="banquet" aria-pressed="false">Wedding Banquet<small>Mon, 2 Nov 2026</small></button>
     </div>
-  </section>
-
-  <div class="ornament">✧ ─── ❈ ─── ✧</div>
-  <section class="message">
-    <span class="small">November 2026 · Sozeith</span>
-    Two days of wedding celebrations
-  </section>
-  <div class="actions" aria-label="Event countdown actions">
-    <button class="action-btn" type="button" id="calendar-mehndi">Add Mehndi to Calendar</button>
-    <button class="action-btn" type="button" id="calendar-wedding">Add Wedding to Calendar</button>
-    <button class="action-btn" type="button" id="share-invitation">Share Countdown ↗</button>
+    <div class="cd" role="timer" aria-label="Countdown">
+      <div class="u"><b id="d">00</b><span>Days</span></div>
+      <div class="u"><b id="h">00</b><span>Hours</span></div>
+      <div class="u"><b id="m">00</b><span>Minutes</span></div>
+      <div class="u"><b id="s">00</b><span>Seconds</span></div>
+    </div>
+    <p class="status" id="status" aria-live="polite"></p>
+    <p class="when" id="when"></p>
   </div>
+</header>
 
+<section id="events">
+  <h2 class="rv">The Celebrations</h2>
+  <div class="cards">
+    <article class="card m rv">
+      <div class="date"><b>01</b><i>Nov</i></div>
+      <h3>Mehndi Raat</h3>
+      <p class="day">Sunday, 1 November 2026</p>
+      <p class="t">4:00 PM onwards</p>
+      <div class="div" aria-hidden="true">❀</div>
+      <p class="day">Sozeith</p>
+      <div class="row"><button class="btn" data-ics="mehndi">Add to Calendar</button><a class="btn o dir" target="_blank" rel="noopener">Directions</a></div>
+    </article>
+    <article class="card w rv">
+      <div class="date"><b>02</b><i>Nov</i></div>
+      <h3 class="gold">Wedding Banquet</h3>
+      <p class="day">Monday, 2 November 2026</p>
+      <p class="t">12:30 PM onwards</p>
+      <div class="div" aria-hidden="true">✦</div>
+      <p class="day">Sozeith</p>
+      <div class="row"><button class="btn" data-ics="banquet">Add to Calendar</button><a class="btn o dir" target="_blank" rel="noopener">Directions</a></div>
+    </article>
+  </div>
+</section>
 
-  <div class="ornament">✧ ─── ❈ ─── ✧</div>
-  <section aria-labelledby="timeline-heading">
-    <p class="section-kicker">November 2026</p>
-    <h2 class="section-title" id="timeline-heading">Event Schedule</h2>
-    <div class="timeline">
-      <article class="timeline-item"><span class="timeline-dot" aria-hidden="true"></span><div class="when">Sunday · 1 November 2026 · 4:00 PM onwards</div><h3>Mehndi Raat</h3><p>4:00 PM onwards</p></article>
-      <article class="timeline-item"><span class="timeline-dot" aria-hidden="true"></span><div class="when">Monday · 2 November 2026 · 12:30 PM onwards</div><h3>Wedding Banquet</h3><p>12:30 PM onwards</p></article>
-    </div>
-  </section>
+<section class="venue" id="venue">
+  <div class="in rv">
+    <h2>At Abdul Qayoom Parray’s Residence, Sozeith</h2>
+    <div class="div" aria-hidden="true">✦</div>
+    <div class="map" id="map"><div class="fb">Sozeith, Kashmir</div></div>
+    <div class="row"><a class="btn dir" target="_blank" rel="noopener">Get Directions</a></div>
+    <p class="coords">34.113194, 74.680858 · Indian Standard Time</p>
+  </div>
+</section>
 
+<section>
+  <p class="quote rv">Two families, one beautiful occasion, and memories to cherish for a lifetime.</p>
+  <div class="row share rv">
+    <button class="btn" id="shareSite">Share Website</button>
+    <button class="btn o" id="shareCd">Share Countdown</button>
+  </div>
+</section>
 
-
-  <a class="venue-link" href="https://www.google.com/maps/dir/?api=1&amp;destination=34.113194440645216%2C74.68085812357977" target="_blank" rel="noopener noreferrer" aria-label="Open directions to Abdul Qayoom Parray’s Residence in Google Maps">
-    <section class="venue" aria-labelledby="venue-heading">
-      <h2 id="venue-heading">Event Location · Tap for Directions</h2>
-      <div class="address">At Abdul Qayoom Parray’s Residence</div>
-      <div class="place">SOZEITH</div>
-      <div class="directions">Open location in Google Maps ↗</div>
-    </section>
-  </a>
-  <section class="compliments">
-    <em>Wedding celebrations · November 2026</em>
-    <strong>Bilal Ahmad Parray</strong>
-    <p style="margin:8px 0 0;font-size:17px">With compliments from Abdul Qayoom Parray and Family</p>
-  </section>
+<section class="close rv">
+  <p>With Compliments From</p>
+  <h2 class="gold">Abdul Qayoom Parray and Family</h2>
+</section>
 </main>
-<footer>A SPECIAL MILESTONE · NOVEMBER 2026</footer>
+<div id="toast" role="status"></div>
 
 <script>
-(function () {
-  const timers = document.querySelectorAll("[data-countdown]");
-  const reveal = document.getElementById("invitation-reveal");
-  function closeReveal() {
-    if (reveal) reveal.classList.add("hidden");
-    document.body.style.overflow = "";
-    try { sessionStorage.setItem("bilalInvitationOpened", "1"); } catch (e) {}
-  }
-  let alreadyOpened = false;
-  try { alreadyOpened = sessionStorage.getItem("bilalInvitationOpened") === "1"; } catch (e) {}
-  if (reveal && alreadyOpened) reveal.classList.add("hidden");
-  else if (reveal) document.body.style.overflow = "hidden";
-  const openButton = document.getElementById("open-invitation");
-  if (openButton) openButton.addEventListener("click", closeReveal);
-
-  function downloadCalendar(eventName, start, end, description) {
-    const stamp = value => value.replace(/[-:]/g, "").replace(/\.\d{3}/, "");
-    const ics = [
-      "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Bilal Ahmad Parray//Wedding Countdown//EN", "CALSCALE:GREGORIAN", "METHOD:PUBLISH",
-      "BEGIN:VEVENT", "UID:" + eventName.toLowerCase().replace(/[^a-z0-9]+/g, "-") + "-bilal-wedding@invitation.local",
-      "DTSTAMP:" + new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d{3}/, ""),
-      "DTSTART:" + stamp(start), "DTEND:" + stamp(end), "SUMMARY:" + eventName,
-      "DESCRIPTION:" + description, "LOCATION:Abdul Qayoom Parray’s Residence, Sozeith", "URL:https://www.google.com/maps/dir/?api=1&destination=34.113194440645216%2C74.68085812357977",
-      "END:VEVENT", "END:VCALENDAR"
-    ].join("\r\n");
-    const blob = new Blob([ics], { type: "text/calendar;charset=utf-8" });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement("a"); link.href = url; link.download = eventName.toLowerCase().replace(/[^a-z0-9]+/g, "-") + ".ics";
-    document.body.appendChild(link); link.click(); link.remove(); URL.revokeObjectURL(url);
-  }
-  document.getElementById("calendar-mehndi").addEventListener("click", () => downloadCalendar("Mehndi Raat", "20261101T103000Z", "20261101T133000Z", "Mehndi Raat at 4:00 PM India Standard Time."));
-  document.getElementById("calendar-wedding").addEventListener("click", () => downloadCalendar("Wedding Banquet", "20261102T070000Z", "20261102T100000Z", "Wedding Banquet at 12:30 PM India Standard Time."));
-  document.getElementById("share-invitation").addEventListener("click", async () => {
-    const shareData = { title: "Bilal Ahmad Parray | Wedding Countdown", text: "Wedding celebration countdown for Bilal Ahmad Parray. Mehndi Raat: 1 November 2026 at 4:00 PM. Wedding Banquet: 2 November 2026 at 12:30 PM. Event location: Abdul Qayoom Parray’s Residence, Sozeith.", url: window.location.href };
-    try {
-      if (navigator.share) await navigator.share(shareData);
-      else if (navigator.clipboard && window.isSecureContext) { await navigator.clipboard.writeText(shareData.text + "\n" + window.location.href); alert("Countdown details copied. You can paste them into WhatsApp."); }
-      else { window.prompt("Copy and share this countdown:", shareData.text + "\n" + window.location.href); }
-    } catch (error) { if (error.name !== "AbortError") alert("Sharing was not available on this device. You can copy the website link from your browser address bar."); }
-  });
-  function updateCountdown(timer) {
-    const target = new Date(timer.dataset.countdown).getTime();
-    const units = timer.querySelectorAll(".time-unit strong");
-    const status = timer.parentElement.querySelector(".countdown-status");
-
-    if (!Number.isFinite(target) || units.length < 4) {
-      if (status) status.textContent = "Countdown unavailable — please check the event date.";
-      return;
-    }
-
-    const remaining = target - Date.now();
-    if (remaining <= 0) {
-      units.forEach(unit => unit.textContent = "00");
-      if (status) status.textContent = remaining > -3 * 60 * 60 * 1000
-        ? "This event is scheduled for now."
-        : "This event date has passed.";
-      return;
-    }
-
-    const days = Math.floor(remaining / 86400000);
-    const hours = Math.floor((remaining % 86400000) / 3600000);
-    const minutes = Math.floor((remaining % 3600000) / 60000);
-    const seconds = Math.floor((remaining % 60000) / 1000);
-    [days, hours, minutes, seconds].forEach((value, index) => {
-      units[index].textContent = String(value).padStart(2, "0");
-    });
-    if (status) status.textContent = "Time remaining";
-  }
-
-  function tick() {
-    timers.forEach(timer => {
-      try { updateCountdown(timer); }
-      catch (error) {
-        const status = timer.parentElement.querySelector(".countdown-status");
-        if (status) status.textContent = "Countdown temporarily unavailable.";
-        console.error("Countdown update failed:", error);
-      }
-    });
-  }
-  tick();
-  window.setInterval(tick, 1000);
+(function(){
+"use strict";
+var $=function(s,r){return (r||document).querySelector(s)},$$=function(s){return Array.prototype.slice.call(document.querySelectorAll(s))};
+document.body.classList.remove("nojs");
+var LAT=34.113194440645216,LNG=74.68085812357977,VENUE="Abdul Qayoom Parray’s Residence, Sozeith";
+var DIR="https://www.google.com/maps/dir/?api=1&destination="+LAT+","+LNG;
+// IST = UTC+05:30, so local times are converted explicitly.
+var IST=330*60000;
+function ist(y,mo,d,h,mi){return Date.UTC(y,mo-1,d,h,mi)-IST}
+var EV={
+ mehndi:{name:"Mehndi Raat",start:ist(2026,11,1,16,0),endDay:ist(2026,11,2,0,0),label:"Sunday, 1 November 2026 · 4:00 PM onwards",ics:"20261101T160000",short:"Sun 1 Nov 2026, 4:00 PM onwards"},
+ banquet:{name:"Wedding Banquet",start:ist(2026,11,2,12,30),endDay:ist(2026,11,3,0,0),label:"Monday, 2 November 2026 · 12:30 PM onwards",ics:"20261102T123000",short:"Mon 2 Nov 2026, 12:30 PM onwards"}
+};
+var cur="mehndi",last={};
+function pad(n){return (n<10?"0":"")+n}
+function set(id,v){var e=$("#"+id);if(e&&last[id]!==v){e.textContent=v;last[id]=v;e.classList.remove("tick");void e.offsetWidth;e.classList.add("tick")}}
+function render(){
+ try{
+  var e=EV[cur],now=Date.now(),diff=e.start-now,st="";
+  if(!isFinite(diff))diff=0;
+  if(now>=e.endDay){diff=0;st="This celebration has concluded. Thank you for your blessings."}
+  else if(diff<=0){diff=0;st="The celebration is under way ✦"}
+  else st="Counting down to "+e.name;
+  var t=Math.floor(diff/1000);
+  set("d",pad(Math.floor(t/86400)));set("h",pad(Math.floor(t%86400/3600)));set("m",pad(Math.floor(t%3600/60)));set("s",pad(t%60));
+  $("#status").textContent=st;$("#when").textContent=e.label;
+ }catch(x){}
+}
+$$(".tab").forEach(function(b){b.addEventListener("click",function(){
+ cur=b.dataset.ev;$$(".tab").forEach(function(o){o.setAttribute("aria-pressed",o===b)});last={};render();
+})});
+// auto-select the next upcoming event
+(function(){var n=Date.now();if(n>=EV.mehndi.endDay)$('.tab[data-ev="banquet"]').click()})();
+render();var timer=setInterval(render,1000);
+document.addEventListener("visibilitychange",function(){if(!document.hidden)render()});
+addEventListener("pagehide",function(){clearInterval(timer)});
+// links
+$$(".dir").forEach(function(a){a.href=DIR});
+// toast
+var tt;function toast(m){var t=$("#toast");t.textContent=m;t.classList.add("on");clearTimeout(tt);tt=setTimeout(function(){t.classList.remove("on")},2600)}
+// calendar (.ics, no end time invented)
+function esc(s){return s.replace(/[\\,;]/g,"\\$&")}
+function ics(k){
+ var e=EV[k],stamp=new Date().toISOString().replace(/[-:]|\.\d+/g,"");
+ var L=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Parray Wedding//EN","CALSCALE:GREGORIAN","METHOD:PUBLISH",
+ "BEGIN:VTIMEZONE","TZID:Asia/Kolkata","BEGIN:STANDARD","DTSTART:19700101T000000","TZOFFSETFROM:+0530","TZOFFSETTO:+0530","TZNAME:IST","END:STANDARD","END:VTIMEZONE",
+ "BEGIN:VEVENT","UID:"+k+"-2026@parray-wedding","DTSTAMP:"+stamp,"DTSTART;TZID=Asia/Kolkata:"+e.ics,
+ "SUMMARY:"+esc(e.name+" – Wedding of Bilal Ahmad Parray"),"LOCATION:"+esc(VENUE),"GEO:"+LAT+";"+LNG,
+ "DESCRIPTION:"+esc("Directions: "+DIR),"END:VEVENT","END:VCALENDAR"];
+ var blob=new Blob([L.join("\r\n")+"\r\n"],{type:"text/calendar;charset=utf-8"}),u=URL.createObjectURL(blob),a=document.createElement("a");
+ a.href=u;a.download=k+"-raat-2026.ics".replace("banquet-raat","wedding-banquet").replace("mehndi-raat","mehndi-raat");
+ document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(u)},4000);toast("Calendar event downloaded");
+}
+$$("[data-ics]").forEach(function(b){b.addEventListener("click",function(){try{ics(b.dataset.ics)}catch(x){toast("Could not create the calendar file")}})});
+// sharing
+function copy(text){
+ if(navigator.clipboard&&navigator.clipboard.writeText)return navigator.clipboard.writeText(text);
+ return new Promise(function(ok,no){try{var t=document.createElement("textarea");t.value=text;t.style.cssText="position:fixed;opacity:0";document.body.appendChild(t);t.select();var r=document.execCommand("copy");t.remove();r?ok():no()}catch(x){no(x)}});
+}
+function share(title,text){
+ var url=location.href.split("#")[0];
+ if(navigator.share){return navigator.share({title:title,text:text,url:url}).catch(function(e){if(e&&e.name==="AbortError")return;return copy(text+"\n"+url).then(function(){toast("Link copied to clipboard")})})}
+ copy(text+"\n"+url).then(function(){toast("Message copied. Paste it to share")},function(){toast("Please copy the page address to share")});
+}
+$("#shareSite").addEventListener("click",function(){share("Wedding of Bilal Ahmad Parray","You are warmly invited to celebrate the wedding of Bilal Ahmad Parray.\nMehndi Raat: "+EV.mehndi.short+"\nWedding Banquet: "+EV.banquet.short+"\nVenue: "+VENUE)});
+$("#shareCd").addEventListener("click",function(){
+ var e=EV[cur],d=Math.max(0,Math.ceil((e.start-Date.now())/86400000)),
+ line=Date.now()>=e.start?e.name+" is here!":d+" day"+(d===1?"":"s")+" to go for "+e.name+"!";
+ share("Countdown: "+e.name,"✦ "+line+" ✦\nWedding of Bilal Ahmad Parray\n"+e.short+"\n"+VENUE)});
+// lazy map
+try{var mp=$("#map"),loaded=false,load=function(){if(loaded)return;loaded=true;var f=document.createElement("iframe");f.title="Map of the venue, Sozeith";f.loading="lazy";f.referrerPolicy="no-referrer-when-downgrade";f.src="https://maps.google.com/maps?q="+LAT+","+LNG+"&z=16&output=embed";mp.appendChild(f)};
+ if("IntersectionObserver" in window){new IntersectionObserver(function(en,o){if(en[0].isIntersecting){load();o.disconnect()}},{rootMargin:"300px"}).observe(mp)}else load()}catch(x){}
+// reveals
+try{if("IntersectionObserver" in window){var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add("on");io.unobserve(e.target)}})},{threshold:.15});$$(".rv").forEach(function(e){io.observe(e)})}else $$(".rv").forEach(function(e){e.classList.add("on")})}catch(x){$$(".rv").forEach(function(e){e.classList.add("on")})}
+// a few ambient particles
+try{if(!matchMedia("(prefers-reduced-motion: reduce)").matches)for(var i=0;i<8;i++){var p=document.createElement("i");p.className="p";p.style.left=(8+i*12)+"%";p.style.animationDelay=(i*1.9)+"s";p.style.animationDuration=(12+i%3*4)+"s";document.body.appendChild(p)}}catch(x){}
+// intro cleanup
+setTimeout(function(){var i=$("#intro");if(i)i.remove()},8000);
 })();
 </script>
 </body>
