@@ -1,245 +1,831 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#073b2b">
-<meta name="description" content="A premium countdown to the wedding celebrations of Bilal Ahmad Parray, with event dates and location details.">
-<title>Bilal Ahmad Parray | Wedding Countdown</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
-<style>
-:root{--green:#063b2b;--green2:#0b4b36;--gold:#c69a42;--gold-light:#f0d99a;--cream:#fff8e8;--ink:#18372b}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;color:var(--ink);font-family:"Cormorant Garamond",Georgia,serif;background:#f8f0dc;background-image:radial-gradient(ellipse at top,rgba(255,255,255,.92),transparent 65%),linear-gradient(135deg,#f7efd9,#fffaf0 48%,#efe0bc)}
-.hero{position:relative;overflow:hidden;text-align:center;padding:56px 20px 46px;background:var(--green);color:var(--cream);border-bottom:5px double var(--gold)}
-.hero:before,.hero:after{content:"✦";position:absolute;color:var(--gold-light);font-size:150px;opacity:.18;top:12px}
-.hero:before{left:3%}.hero:after{right:3%}
-.bismillah{font-size:clamp(25px,4vw,38px);color:var(--gold-light);margin-bottom:14px}
-.eyebrow{letter-spacing:4px;text-transform:uppercase;font-size:12px;color:#ead6a1}
-.hero h1{font-family:"Great Vibes",cursive;font-size:clamp(54px,10vw,100px);font-weight:400;line-height:1.1;margin:10px 0;color:#fff3d0}
-.weds{letter-spacing:7px;text-transform:uppercase;color:var(--gold-light);font-size:15px;margin:8px}
-.hero .subtitle{font-size:clamp(17px,3vw,23px);margin:18px auto 0;max-width:680px;line-height:1.4}
-main{max-width:1050px;margin:auto;padding:28px 18px 60px}
-.ornament{color:var(--gold);letter-spacing:8px;text-align:center;margin:18px 0}
-.intro{text-align:center;max-width:760px;margin:0 auto 26px;font-size:21px;line-height:1.5}
-.intro strong{display:block;font-size:clamp(30px,5vw,43px);color:var(--green);font-weight:600;margin:8px 0}
-.intro .bride{font-size:clamp(24px,4vw,35px);color:#85581b}
-.section-title{text-align:center;font-size:clamp(27px,4vw,38px);font-weight:600;color:var(--green);margin:35px 0 18px}
-.countdowns,.events{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
-.panel{position:relative;border:1px solid var(--gold);outline:1px solid rgba(198,154,66,.45);outline-offset:4px;border-radius:90px 90px 18px 18px;padding:30px 22px 24px;text-align:center;background:rgba(255,252,242,.88);box-shadow:0 10px 30px rgba(58,43,12,.08)}
-.panel:before{content:"✧";display:block;font-size:30px;color:var(--gold);margin-bottom:4px}
-.panel h2{margin:0;color:var(--green);font-size:29px;font-weight:600}
-.date{font-size:20px;margin:8px 0;color:#755018}
-.time{font-size:18px;margin:0 0 18px}
-.timer{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin:18px 0}
-.time-unit{background:var(--green);color:#fff7e3;border:1px solid var(--gold);padding:12px 3px;border-radius:8px}
-.time-unit strong{display:block;font-size:clamp(22px,4vw,34px);font-weight:600;line-height:1.05}
-.time-unit span{font-family:Arial,sans-serif;font-size:9px;letter-spacing:1px;text-transform:uppercase;color:var(--gold-light)}
-.countdown-status{min-height:24px;font-size:16px;color:#755018}
-.venue{margin:42px auto 28px;max-width:700px;text-align:center;background:var(--green);color:var(--cream);border:3px double var(--gold);padding:25px 20px;border-radius:8px;transition:transform .2s ease,box-shadow .2s ease}
-.venue-link{display:block;color:inherit;text-decoration:none;border-radius:8px}
-.venue-link:hover,.venue-link:focus-visible{transform:translateY(-2px);box-shadow:0 10px 24px rgba(6,59,43,.18);outline:2px solid var(--gold);outline-offset:5px}
-.venue .directions{font-family:Arial,sans-serif;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold-light);margin-top:16px}
-.venue h2{font-size:14px;letter-spacing:5px;color:var(--gold-light);margin:0 0 12px;text-transform:uppercase}
-.venue .address{font-size:clamp(24px,4vw,34px);line-height:1.25}
-.venue .place{letter-spacing:5px;color:var(--gold-light);margin-top:10px;font-size:16px}
-.compliments{text-align:center;font-size:20px;margin-top:34px}
-.compliments em{display:block;color:#85581b;font-size:22px}
-.compliments strong{display:block;font-size:26px;color:var(--green);margin-top:5px}
-footer{text-align:center;background:var(--green);color:#ead6a1;padding:18px;font-size:14px;letter-spacing:2px}
-.actions{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin:28px auto;max-width:700px}
-.action-btn{appearance:none;border:1px solid var(--gold);background:var(--green);color:var(--cream);font-family:Arial,sans-serif;font-size:13px;letter-spacing:.4px;padding:13px 18px;border-radius:999px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:background .2s ease,transform .2s ease}
-.action-btn:hover,.action-btn:focus-visible{background:var(--green2);transform:translateY(-2px);outline:2px solid var(--gold);outline-offset:3px}
-.message{max-width:760px;text-align:center;margin:34px auto 26px;padding:24px 22px;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);font-size:clamp(21px,3vw,27px);font-style:italic;line-height:1.45;color:#755018}
-.message .small{display:block;font-size:12px;letter-spacing:3px;text-transform:uppercase;font-style:normal;color:var(--green);margin-bottom:10px}
-.reveal{position:fixed;inset:0;z-index:20;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;background:radial-gradient(ellipse at center,#0b4b36,#03251b);color:var(--cream);transition:opacity .7s ease,visibility .7s ease}
-.reveal.hidden{opacity:0;visibility:hidden;pointer-events:none}
-.reveal-inner{max-width:650px;border:1px solid var(--gold);outline:1px solid rgba(198,154,66,.5);outline-offset:7px;padding:42px 26px;background:rgba(255,248,232,.04);animation:reveal-in 1.2s ease both}
-.reveal .crescent{font-size:42px;color:var(--gold-light);margin-bottom:12px}
-.reveal h2{font-family:"Great Vibes",cursive;font-size:clamp(46px,9vw,76px);font-weight:400;color:#fff3d0;margin:12px 0}
-.reveal p{font-size:20px;line-height:1.5;margin:12px 0 24px}
-@keyframes reveal-in{from{opacity:0;transform:translateY(16px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
-@media(prefers-reduced-motion:reduce){.reveal-inner{animation:none}.reveal,.action-btn{transition:none}}
-@media(max-width:650px){.countdowns,.events{grid-template-columns:1fr}.hero{padding:42px 16px 36px}.hero:before,.hero:after{font-size:80px}.panel{max-width:460px;width:100%;margin:auto}.intro{font-size:19px}main{padding-left:22px;padding-right:22px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#073b2b" />
+    <meta
+      name="description"
+      content="A premium countdown to the wedding celebrations of Bilal Ahmad Parray, with event dates and location details."
+    />
+    <title>Bilal Ahmad Parray | Wedding Countdown</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --green: #063b2b;
+        --green2: #0b4b36;
+        --gold: #c69a42;
+        --gold-light: #f0d99a;
+        --cream: #fff8e8;
+        --ink: #18372b;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        color: var(--ink);
+        font-family: "Cormorant Garamond", Georgia, serif;
+        background: #f8f0dc;
+        background-image:
+          radial-gradient(
+            ellipse at top,
+            rgba(255, 255, 255, 0.92),
+            transparent 65%
+          ),
+          linear-gradient(135deg, #f7efd9, #fffaf0 48%, #efe0bc);
+      }
+      .hero {
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        padding: 56px 20px 46px;
+        background: var(--green);
+        color: var(--cream);
+        border-bottom: 5px double var(--gold);
+      }
+      .hero:before,
+      .hero:after {
+        content: "✦";
+        position: absolute;
+        color: var(--gold-light);
+        font-size: 150px;
+        opacity: 0.18;
+        top: 12px;
+      }
+      .hero:before {
+        left: 3%;
+      }
+      .hero:after {
+        right: 3%;
+      }
+      .bismillah {
+        font-size: clamp(25px, 4vw, 38px);
+        color: var(--gold-light);
+        margin-bottom: 14px;
+      }
+      .eyebrow {
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: #ead6a1;
+      }
+      .hero h1 {
+        font-family: "Great Vibes", cursive;
+        font-size: clamp(54px, 10vw, 100px);
+        font-weight: 400;
+        line-height: 1.1;
+        margin: 10px 0;
+        color: #fff3d0;
+      }
+      .weds {
+        letter-spacing: 7px;
+        text-transform: uppercase;
+        color: var(--gold-light);
+        font-size: 15px;
+        margin: 8px;
+      }
+      .hero .subtitle {
+        font-size: clamp(17px, 3vw, 23px);
+        margin: 18px auto 0;
+        max-width: 680px;
+        line-height: 1.4;
+      }
+      main {
+        max-width: 1050px;
+        margin: auto;
+        padding: 28px 18px 60px;
+      }
+      .ornament {
+        color: var(--gold);
+        letter-spacing: 8px;
+        text-align: center;
+        margin: 18px 0;
+      }
+      .intro {
+        text-align: center;
+        max-width: 760px;
+        margin: 0 auto 26px;
+        font-size: 21px;
+        line-height: 1.5;
+      }
+      .intro strong {
+        display: block;
+        font-size: clamp(30px, 5vw, 43px);
+        color: var(--green);
+        font-weight: 600;
+        margin: 8px 0;
+      }
+      .intro .bride {
+        font-size: clamp(24px, 4vw, 35px);
+        color: #85581b;
+      }
+      .section-title {
+        text-align: center;
+        font-size: clamp(27px, 4vw, 38px);
+        font-weight: 600;
+        color: var(--green);
+        margin: 35px 0 18px;
+      }
+      .countdowns,
+      .events {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+      }
+      .panel {
+        position: relative;
+        border: 1px solid var(--gold);
+        outline: 1px solid rgba(198, 154, 66, 0.45);
+        outline-offset: 4px;
+        border-radius: 90px 90px 18px 18px;
+        padding: 30px 22px 24px;
+        text-align: center;
+        background: rgba(255, 252, 242, 0.88);
+        box-shadow: 0 10px 30px rgba(58, 43, 12, 0.08);
+      }
+      .panel:before {
+        content: "✧";
+        display: block;
+        font-size: 30px;
+        color: var(--gold);
+        margin-bottom: 4px;
+      }
+      .panel h2 {
+        margin: 0;
+        color: var(--green);
+        font-size: 29px;
+        font-weight: 600;
+      }
+      .date {
+        font-size: 20px;
+        margin: 8px 0;
+        color: #755018;
+      }
+      .time {
+        font-size: 18px;
+        margin: 0 0 18px;
+      }
+      .timer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 7px;
+        margin: 18px 0;
+      }
+      .time-unit {
+        background: var(--green);
+        color: #fff7e3;
+        border: 1px solid var(--gold);
+        padding: 12px 3px;
+        border-radius: 8px;
+      }
+      .time-unit strong {
+        display: block;
+        font-size: clamp(22px, 4vw, 34px);
+        font-weight: 600;
+        line-height: 1.05;
+      }
+      .time-unit span {
+        font-family: Arial, sans-serif;
+        font-size: 9px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: var(--gold-light);
+      }
+      .countdown-status {
+        min-height: 24px;
+        font-size: 16px;
+        color: #755018;
+      }
+      .venue {
+        margin: 42px auto 28px;
+        max-width: 700px;
+        text-align: center;
+        background: var(--green);
+        color: var(--cream);
+        border: 3px double var(--gold);
+        padding: 25px 20px;
+        border-radius: 8px;
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+      .venue-link {
+        display: block;
+        color: inherit;
+        text-decoration: none;
+        border-radius: 8px;
+      }
+      .venue-link:hover,
+      .venue-link:focus-visible {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 24px rgba(6, 59, 43, 0.18);
+        outline: 2px solid var(--gold);
+        outline-offset: 5px;
+      }
+      .venue .directions {
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: var(--gold-light);
+        margin-top: 16px;
+      }
+      .venue h2 {
+        font-size: 14px;
+        letter-spacing: 5px;
+        color: var(--gold-light);
+        margin: 0 0 12px;
+        text-transform: uppercase;
+      }
+      .venue .address {
+        font-size: clamp(24px, 4vw, 34px);
+        line-height: 1.25;
+      }
+      .venue .place {
+        letter-spacing: 5px;
+        color: var(--gold-light);
+        margin-top: 10px;
+        font-size: 16px;
+      }
+      .compliments {
+        text-align: center;
+        font-size: 20px;
+        margin-top: 34px;
+      }
+      .compliments em {
+        display: block;
+        color: #85581b;
+        font-size: 22px;
+      }
+      .compliments strong {
+        display: block;
+        font-size: 26px;
+        color: var(--green);
+        margin-top: 5px;
+      }
+      footer {
+        text-align: center;
+        background: var(--green);
+        color: #ead6a1;
+        padding: 18px;
+        font-size: 14px;
+        letter-spacing: 2px;
+      }
+      .actions {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin: 28px auto;
+        max-width: 700px;
+      }
+      .action-btn {
+        appearance: none;
+        border: 1px solid var(--gold);
+        background: var(--green);
+        color: var(--cream);
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        letter-spacing: 0.4px;
+        padding: 13px 18px;
+        border-radius: 999px;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        transition:
+          background 0.2s ease,
+          transform 0.2s ease;
+      }
+      .action-btn:hover,
+      .action-btn:focus-visible {
+        background: var(--green2);
+        transform: translateY(-2px);
+        outline: 2px solid var(--gold);
+        outline-offset: 3px;
+      }
+      .message {
+        max-width: 760px;
+        text-align: center;
+        margin: 34px auto 26px;
+        padding: 24px 22px;
+        border-top: 1px solid var(--gold);
+        border-bottom: 1px solid var(--gold);
+        font-size: clamp(21px, 3vw, 27px);
+        font-style: italic;
+        line-height: 1.45;
+        color: #755018;
+      }
+      .message .small {
+        display: block;
+        font-size: 12px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        font-style: normal;
+        color: var(--green);
+        margin-bottom: 10px;
+      }
+      .reveal {
+        position: fixed;
+        inset: 0;
+        z-index: 20;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 24px;
+        background: radial-gradient(ellipse at center, #0b4b36, #03251b);
+        color: var(--cream);
+        transition:
+          opacity 0.7s ease,
+          visibility 0.7s ease;
+      }
+      .reveal.hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
+      .reveal-inner {
+        max-width: 650px;
+        border: 1px solid var(--gold);
+        outline: 1px solid rgba(198, 154, 66, 0.5);
+        outline-offset: 7px;
+        padding: 42px 26px;
+        background: rgba(255, 248, 232, 0.04);
+        animation: reveal-in 1.2s ease both;
+      }
+      .reveal .crescent {
+        font-size: 42px;
+        color: var(--gold-light);
+        margin-bottom: 12px;
+      }
+      .reveal h2 {
+        font-family: "Great Vibes", cursive;
+        font-size: clamp(46px, 9vw, 76px);
+        font-weight: 400;
+        color: #fff3d0;
+        margin: 12px 0;
+      }
+      .reveal p {
+        font-size: 20px;
+        line-height: 1.5;
+        margin: 12px 0 24px;
+      }
+      @keyframes reveal-in {
+        from {
+          opacity: 0;
+          transform: translateY(16px) scale(0.98);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .reveal-inner {
+          animation: none;
+        }
+        .reveal,
+        .action-btn {
+          transition: none;
+        }
+      }
+      @media (max-width: 650px) {
+        .countdowns,
+        .events {
+          grid-template-columns: 1fr;
+        }
+        .hero {
+          padding: 42px 16px 36px;
+        }
+        .hero:before,
+        .hero:after {
+          font-size: 80px;
+        }
+        .panel {
+          max-width: 460px;
+          width: 100%;
+          margin: auto;
+        }
+        .intro {
+          font-size: 19px;
+        }
+        main {
+          padding-left: 22px;
+          padding-right: 22px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+      }
 
-/* Additional premium countdown sections */
-.section-kicker{font-family:Arial,sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#9a742e;text-align:center;margin:0 0 8px}
-.detail-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:26px 0 42px}
-.detail-card{background:rgba(255,252,242,.8);border:1px solid rgba(198,154,66,.75);border-radius:14px;padding:23px 18px;text-align:center;box-shadow:0 8px 24px rgba(58,43,12,.055)}
-.detail-card .symbol{font-size:28px;color:var(--gold);margin-bottom:9px}
-.detail-card h3{margin:0 0 8px;font-size:23px;color:var(--green);font-weight:600}
-.detail-card p{margin:0;font-size:18px;line-height:1.4}
-.timeline{max-width:760px;margin:22px auto 42px;position:relative;padding:4px 0}
-.timeline:before{content:"";position:absolute;top:14px;bottom:14px;left:27px;width:1px;background:linear-gradient(var(--gold),rgba(198,154,66,.2))}
-.timeline-item{position:relative;padding:0 0 26px 70px}
-.timeline-item:last-child{padding-bottom:0}
-.timeline-dot{position:absolute;left:17px;top:3px;width:21px;height:21px;border-radius:50%;background:var(--green);border:2px solid var(--gold);box-shadow:0 0 0 4px rgba(198,154,66,.12)}
-.timeline-item .when{font-family:Arial,sans-serif;text-transform:uppercase;letter-spacing:1.4px;font-size:11px;color:#926d2d;margin-bottom:5px}
-.timeline-item h3{margin:0;color:var(--green);font-size:27px;font-weight:600}
-.timeline-item p{margin:4px 0 0;font-size:18px;line-height:1.4}
-@media(max-width:650px){.timeline-item h3{font-size:25px}}
-
-</style>
-</head>
-<body>
-<div class="reveal" id="invitation-reveal" role="dialog" aria-modal="true" aria-labelledby="reveal-title">
-  <div class="reveal-inner">
-    <div class="crescent" aria-hidden="true">☾ ✦</div>
-    <div class="eyebrow">Wedding countdown</div>
-    <h2 id="reveal-title">Wedding Countdown</h2>
-    <p>Counting down to the wedding celebrations of<br><strong>Bilal Ahmad Parray</strong></p>
-    <button class="action-btn" id="open-invitation" type="button">View Countdown ✧</button>
-    <div style="margin-top:14px"><button id="skip-reveal" type="button" style="background:none;border:0;color:#ead6a1;text-decoration:underline;cursor:pointer;font:13px Arial,sans-serif">Skip animation</button></div>
-  </div>
-</div>
-<header class="hero">
-  <div class="bismillah" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
-  <div class="eyebrow">With the blessings of Allah, the Most Gracious, the Most Merciful</div>
-  <p class="subtitle">Wedding celebrations · November 2026</p>
-  <h1>Bilal Ahmad Parray</h1>
-  <div class="weds">Wedding celebrations</div>
-  <p class="subtitle">Bride’s family: <strong>Mr. Farooq Ahmad Parray</strong></p>
-  <div class="ornament">✧ ─── ❈ ─── ✧</div>
-</header>
-
-<main>
-  <section aria-labelledby="countdown-heading">
-    <h2 class="section-title" id="countdown-heading">Countdown to the Event Dates</h2>
-    <div class="countdowns">
-      <article class="panel">
-        <h2>Mehndi Raat</h2>
-        <p class="date">Sunday, 1st November 2026</p>
-        <p class="time">4:00 PM onwards · India Standard Time</p>
-        <div class="timer" data-countdown="2026-11-01T16:00:00+05:30" aria-label="Countdown to Mehndi Raat">
-          <div class="time-unit"><strong>--</strong><span>Days</span></div>
-          <div class="time-unit"><strong>--</strong><span>Hours</span></div>
-          <div class="time-unit"><strong>--</strong><span>Minutes</span></div>
-          <div class="time-unit"><strong>--</strong><span>Seconds</span></div>
-        </div>
-        <div class="countdown-status" aria-live="polite">Until Mehndi Raat</div>
-      </article>
-      <article class="panel">
-        <h2>Wedding Banquet</h2>
-        <p class="date">Monday, 2nd November 2026</p>
-        <p class="time">12:30 PM onwards · India Standard Time</p>
-        <div class="timer" data-countdown="2026-11-02T12:30:00+05:30" aria-label="Countdown to Wedding Banquet">
-          <div class="time-unit"><strong>--</strong><span>Days</span></div>
-          <div class="time-unit"><strong>--</strong><span>Hours</span></div>
-          <div class="time-unit"><strong>--</strong><span>Minutes</span></div>
-          <div class="time-unit"><strong>--</strong><span>Seconds</span></div>
-        </div>
-        <div class="countdown-status" aria-live="polite">Until the Wedding Banquet</div>
-      </article>
+      /* Additional premium countdown sections */
+      .section-kicker {
+        font-family: Arial, sans-serif;
+        font-size: 11px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #9a742e;
+        text-align: center;
+        margin: 0 0 8px;
+      }
+      .detail-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+        margin: 26px 0 42px;
+      }
+      .detail-card {
+        background: rgba(255, 252, 242, 0.8);
+        border: 1px solid rgba(198, 154, 66, 0.75);
+        border-radius: 14px;
+        padding: 23px 18px;
+        text-align: center;
+        box-shadow: 0 8px 24px rgba(58, 43, 12, 0.055);
+      }
+      .detail-card .symbol {
+        font-size: 28px;
+        color: var(--gold);
+        margin-bottom: 9px;
+      }
+      .detail-card h3 {
+        margin: 0 0 8px;
+        font-size: 23px;
+        color: var(--green);
+        font-weight: 600;
+      }
+      .detail-card p {
+        margin: 0;
+        font-size: 18px;
+        line-height: 1.4;
+      }
+      .timeline {
+        max-width: 760px;
+        margin: 22px auto 42px;
+        position: relative;
+        padding: 4px 0;
+      }
+      .timeline:before {
+        content: "";
+        position: absolute;
+        top: 14px;
+        bottom: 14px;
+        left: 27px;
+        width: 1px;
+        background: linear-gradient(var(--gold), rgba(198, 154, 66, 0.2));
+      }
+      .timeline-item {
+        position: relative;
+        padding: 0 0 26px 70px;
+      }
+      .timeline-item:last-child {
+        padding-bottom: 0;
+      }
+      .timeline-dot {
+        position: absolute;
+        left: 17px;
+        top: 3px;
+        width: 21px;
+        height: 21px;
+        border-radius: 50%;
+        background: var(--green);
+        border: 2px solid var(--gold);
+        box-shadow: 0 0 0 4px rgba(198, 154, 66, 0.12);
+      }
+      .timeline-item .when {
+        font-family: Arial, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1.4px;
+        font-size: 11px;
+        color: #926d2d;
+        margin-bottom: 5px;
+      }
+      .timeline-item h3 {
+        margin: 0;
+        color: var(--green);
+        font-size: 27px;
+        font-weight: 600;
+      }
+      .timeline-item p {
+        margin: 4px 0 0;
+        font-size: 18px;
+        line-height: 1.4;
+      }
+      @media (max-width: 650px) {
+        .timeline-item h3 {
+          font-size: 25px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="reveal"
+      id="invitation-reveal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="reveal-title"
+    >
+      <div class="reveal-inner">
+        <div class="crescent" aria-hidden="true">☾ ✦</div>
+        <div class="eyebrow">Wedding countdown</div>
+        <h2 id="reveal-title">Wedding Countdown</h2>
+        <p>
+          Counting down to the wedding celebrations of<br /><strong
+            >Bilal Ahmad Parray</strong
+          >
+        </p>
+        <button class="action-btn" id="open-invitation" type="button">
+          View Countdown ✧
+        </button>
+      </div>
     </div>
-  </section>
+    <header class="hero">
+      <div class="bismillah" lang="ar" dir="rtl">
+        بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+      </div>
+      <div class="eyebrow">
+        With the blessings of Allah, the Most Gracious, the Most Merciful
+      </div>
+      <p class="subtitle">Wedding celebrations · November 2026</p>
+      <h1>Bilal Ahmad Parray</h1>
+      <div class="weds">Wedding celebrations</div>
+      <p class="subtitle">
+        Bride’s family: <strong>Mr. Farooq Ahmad Parray</strong>
+      </p>
+      <div class="ornament">✧ ─── ❈ ─── ✧</div>
+    </header>
 
-  <div class="ornament">✧ ─── ❈ ─── ✧</div>
-  <section class="message">
-    <span class="small">November 2026 · Sozeith</span>
-    Two days of wedding celebrations
-  </section>
-  <div class="actions" aria-label="Event countdown actions">
-    <button class="action-btn" type="button" id="calendar-mehndi">Add Mehndi to Calendar</button>
-    <button class="action-btn" type="button" id="calendar-wedding">Add Wedding to Calendar</button>
-    <button class="action-btn" type="button" id="share-invitation">Share Countdown ↗</button>
-  </div>
+    <main>
+      <section aria-labelledby="countdown-heading">
+        <h2 class="section-title" id="countdown-heading">
+          Countdown to the Event Dates
+        </h2>
+        <div class="countdowns">
+          <article class="panel">
+            <h2>Mehndi Raat</h2>
+            <p class="date">Sunday, 1st November 2026</p>
+            <p class="time">4:00 PM onwards · India Standard Time</p>
+            <div
+              class="timer"
+              data-countdown="2026-11-01T16:00:00+05:30"
+              aria-label="Countdown to Mehndi Raat"
+            >
+              <div class="time-unit"><strong>--</strong><span>Days</span></div>
+              <div class="time-unit"><strong>--</strong><span>Hours</span></div>
+              <div class="time-unit">
+                <strong>--</strong><span>Minutes</span>
+              </div>
+              <div class="time-unit">
+                <strong>--</strong><span>Seconds</span>
+              </div>
+            </div>
+            <div class="countdown-status" aria-live="polite">
+              Until Mehndi Raat
+            </div>
+          </article>
+          <article class="panel">
+            <h2>Wedding Banquet</h2>
+            <p class="date">Monday, 2nd November 2026</p>
+            <p class="time">12:30 PM onwards · India Standard Time</p>
+            <div
+              class="timer"
+              data-countdown="2026-11-02T12:30:00+05:30"
+              aria-label="Countdown to Wedding Banquet"
+            >
+              <div class="time-unit"><strong>--</strong><span>Days</span></div>
+              <div class="time-unit"><strong>--</strong><span>Hours</span></div>
+              <div class="time-unit">
+                <strong>--</strong><span>Minutes</span>
+              </div>
+              <div class="time-unit">
+                <strong>--</strong><span>Seconds</span>
+              </div>
+            </div>
+            <div class="countdown-status" aria-live="polite">
+              Until the Wedding Banquet
+            </div>
+          </article>
+        </div>
+      </section>
 
+      <div class="ornament">✧ ─── ❈ ─── ✧</div>
+      <section class="message">
+        <span class="small">November 2026 · Sozeith</span>
+        Two days of wedding celebrations
+      </section>
+      <div class="actions" aria-label="Event countdown actions">
+        <button class="action-btn" type="button" id="calendar-mehndi">
+          Add Mehndi to Calendar
+        </button>
+        <button class="action-btn" type="button" id="calendar-wedding">
+          Add Wedding to Calendar
+        </button>
+        <button class="action-btn" type="button" id="share-invitation">
+          Share Countdown ↗
+        </button>
+      </div>
 
-  <div class="ornament">✧ ─── ❈ ─── ✧</div>
-  <section aria-labelledby="timeline-heading">
-    <p class="section-kicker">November 2026</p>
-    <h2 class="section-title" id="timeline-heading">Event Schedule</h2>
-    <div class="timeline">
-      <article class="timeline-item"><span class="timeline-dot" aria-hidden="true"></span><div class="when">Sunday · 1 November 2026 · 4:00 PM onwards</div><h3>Mehndi Raat</h3><p>4:00 PM onwards</p></article>
-      <article class="timeline-item"><span class="timeline-dot" aria-hidden="true"></span><div class="when">Monday · 2 November 2026 · 12:30 PM onwards</div><h3>Wedding Banquet</h3><p>12:30 PM onwards</p></article>
-    </div>
-  </section>
+      <div class="ornament">✧ ─── ❈ ─── ✧</div>
+      <section aria-labelledby="timeline-heading">
+        <p class="section-kicker">November 2026</p>
+        <h2 class="section-title" id="timeline-heading">Event Schedule</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="when">Sunday · 1 November 2026 · 4:00 PM onwards</div>
+            <h3>Mehndi Raat</h3>
+            <p>4:00 PM onwards</p>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="when">Monday · 2 November 2026 · 12:30 PM onwards</div>
+            <h3>Wedding Banquet</h3>
+            <p>12:30 PM onwards</p>
+          </article>
+        </div>
+      </section>
 
+      <a
+        class="venue-link"
+        href="https://www.google.com/maps/dir/?api=1&amp;destination=34.113194440645216%2C74.68085812357977"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Open directions to Abdul Qayoom Parray’s Residence in Google Maps"
+      >
+        <section class="venue" aria-labelledby="venue-heading">
+          <h2 id="venue-heading">Event Location · Tap for Directions</h2>
+          <div class="address">At Abdul Qayoom Parray’s Residence</div>
+          <div class="place">SOZEITH</div>
+          <div class="directions">Open location in Google Maps ↗</div>
+        </section>
+      </a>
+      <section class="compliments">
+        <em>Wedding celebrations · November 2026</em>
+        <strong>Bilal Ahmad Parray</strong>
+        <p style="margin: 8px 0 0; font-size: 17px">
+          With compliments from Abdul Qayoom Parray and Family
+        </p>
+      </section>
+    </main>
+    <footer>A SPECIAL MILESTONE · NOVEMBER 2026</footer>
 
+    <script>
+      (function () {
+        const timers = document.querySelectorAll("[data-countdown]");
+        const reveal = document.getElementById("invitation-reveal");
+        function closeReveal() {
+          reveal.classList.add("hidden");
+          document.body.style.overflow = "";
+          try {
+            sessionStorage.setItem("bilalInvitationOpened", "1");
+          } catch (e) {}
+        }
+        let alreadyOpened = false;
+        try {
+          alreadyOpened =
+            sessionStorage.getItem("bilalInvitationOpened") === "1";
+        } catch (e) {}
+        if (alreadyOpened) reveal.classList.add("hidden");
+        else document.body.style.overflow = "hidden";
+        document
+          .getElementById("open-invitation")
+          .addEventListener("click", closeReveal);
+        document
+          .getElementById("skip-reveal")
+          .addEventListener("click", closeReveal);
 
-  <a class="venue-link" href="https://www.google.com/maps/dir/?api=1&amp;destination=34.113194440645216%2C74.68085812357977" target="_blank" rel="noopener noreferrer" aria-label="Open directions to Abdul Qayoom Parray’s Residence in Google Maps">
-    <section class="venue" aria-labelledby="venue-heading">
-      <h2 id="venue-heading">Event Location · Tap for Directions</h2>
-      <div class="address">At Abdul Qayoom Parray’s Residence</div>
-      <div class="place">SOZEITH</div>
-      <div class="directions">Open location in Google Maps ↗</div>
-    </section>
-  </a>
-  <section class="compliments">
-    <em>Wedding celebrations · November 2026</em>
-    <strong>Bilal Ahmad Parray</strong>
-    <p style="margin:8px 0 0;font-size:17px">With compliments from Abdul Qayoom Parray and Family</p>
-  </section>
-</main>
-<footer>A SPECIAL MILESTONE · NOVEMBER 2026</footer>
-
-<script>
-(function () {
-  const timers = document.querySelectorAll("[data-countdown]");
-  const reveal = document.getElementById("invitation-reveal");
-  function closeReveal() {
-    reveal.classList.add("hidden");
-    document.body.style.overflow = "";
-    try { sessionStorage.setItem("bilalInvitationOpened", "1"); } catch (e) {}
-  }
-  let alreadyOpened = false;
-  try { alreadyOpened = sessionStorage.getItem("bilalInvitationOpened") === "1"; } catch (e) {}
-  if (alreadyOpened) reveal.classList.add("hidden");
-  else document.body.style.overflow = "hidden";
-  document.getElementById("open-invitation").addEventListener("click", closeReveal);
-  document.getElementById("skip-reveal").addEventListener("click", closeReveal);
-
-  function downloadCalendar(eventName, start, end, description) {
-    const stamp = value => value.replace(/[-:]/g, "").replace(/\.\d{3}/, "");
-    const ics = [
-      "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Bilal Ahmad Parray//Wedding Countdown//EN", "CALSCALE:GREGORIAN", "METHOD:PUBLISH",
-      "BEGIN:VEVENT", "UID:" + eventName.toLowerCase().replace(/[^a-z0-9]+/g, "-") + "-bilal-wedding@invitation.local",
-      "DTSTAMP:" + new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d{3}/, ""),
-      "DTSTART:" + stamp(start), "DTEND:" + stamp(end), "SUMMARY:" + eventName,
-      "DESCRIPTION:" + description, "LOCATION:Abdul Qayoom Parray’s Residence, Sozeith", "URL:https://www.google.com/maps/dir/?api=1&destination=34.113194440645216%2C74.68085812357977",
-      "END:VEVENT", "END:VCALENDAR"
-    ].join("\r\n");
-    const blob = new Blob([ics], { type: "text/calendar;charset=utf-8" });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement("a"); link.href = url; link.download = eventName.toLowerCase().replace(/[^a-z0-9]+/g, "-") + ".ics";
-    document.body.appendChild(link); link.click(); link.remove(); URL.revokeObjectURL(url);
-  }
-  document.getElementById("calendar-mehndi").addEventListener("click", () => downloadCalendar("Mehndi Raat", "20261101T103000Z", "20261101T133000Z", "Mehndi Raat at 4:00 PM India Standard Time."));
-  document.getElementById("calendar-wedding").addEventListener("click", () => downloadCalendar("Wedding Banquet", "20261102T070000Z", "20261102T100000Z", "Wedding Banquet at 12:30 PM India Standard Time."));
-  document.getElementById("share-invitation").addEventListener("click", async () => {
-    const shareData = { title: "Bilal Ahmad Parray | Wedding Countdown", text: "Wedding celebration countdown for Bilal Ahmad Parray. Mehndi Raat: 1 November 2026 at 4:00 PM. Wedding Banquet: 2 November 2026 at 12:30 PM. Event location: Abdul Qayoom Parray’s Residence, Sozeith.", url: window.location.href };
-    try {
-      if (navigator.share) await navigator.share(shareData);
-      else if (navigator.clipboard && window.isSecureContext) { await navigator.clipboard.writeText(shareData.text + "\n" + window.location.href); alert("Countdown details copied. You can paste them into WhatsApp."); }
-      else { window.prompt("Copy and share this countdown:", shareData.text + "\n" + window.location.href); }
-    } catch (error) { if (error.name !== "AbortError") alert("Sharing was not available on this device. You can copy the website link from your browser address bar."); }
-  });
-  function updateCountdown(timer) {
-    const target = new Date(timer.dataset.countdown).getTime();
-    const now = Date.now();
-    const remaining = target - now;
-    const units = timer.querySelectorAll(".time-unit strong");
-    const status = timer.parentElement.querySelector(".countdown-status");
-    if (remaining <= 0) {
-      units.forEach(unit => unit.textContent = "0");
-      status.textContent = remaining > -86400000 ? "The celebration is underway or has begun!" : "This celebration date has passed.";
-      return;
-    }
-    const days = Math.floor(remaining / 86400000);
-    const hours = Math.floor((remaining % 86400000) / 3600000);
-    const minutes = Math.floor((remaining % 3600000) / 60000);
-    const seconds = Math.floor((remaining % 60000) / 1000);
-    [days, hours, minutes, seconds].forEach((value, index) => units[index].textContent = String(value).padStart(2, "0"));
-    status.textContent = "Time remaining";
-  }
-  function tick() { timers.forEach(updateCountdown); }
-  tick();
-  window.setInterval(tick, 1000);
-})();
-</script>
-</body>
+        function downloadCalendar(eventName, start, end, description) {
+          const stamp = (value) =>
+            value.replace(/[-:]/g, "").replace(/\.\d{3}/, "");
+          const ics = [
+            "BEGIN:VCALENDAR",
+            "VERSION:2.0",
+            "PRODID:-//Bilal Ahmad Parray//Wedding Countdown//EN",
+            "CALSCALE:GREGORIAN",
+            "METHOD:PUBLISH",
+            "BEGIN:VEVENT",
+            "UID:" +
+              eventName.toLowerCase().replace(/[^a-z0-9]+/g, "-") +
+              "-bilal-wedding@invitation.local",
+            "DTSTAMP:" +
+              new Date()
+                .toISOString()
+                .replace(/[-:]/g, "")
+                .replace(/\.\d{3}/, ""),
+            "DTSTART:" + stamp(start),
+            "DTEND:" + stamp(end),
+            "SUMMARY:" + eventName,
+            "DESCRIPTION:" + description,
+            "LOCATION:Abdul Qayoom Parray’s Residence, Sozeith",
+            "URL:https://www.google.com/maps/dir/?api=1&destination=34.113194440645216%2C74.68085812357977",
+            "END:VEVENT",
+            "END:VCALENDAR",
+          ].join("\r\n");
+          const blob = new Blob([ics], { type: "text/calendar;charset=utf-8" });
+          const url = URL.createObjectURL(blob);
+          const link = document.createElement("a");
+          link.href = url;
+          link.download =
+            eventName.toLowerCase().replace(/[^a-z0-9]+/g, "-") + ".ics";
+          document.body.appendChild(link);
+          link.click();
+          link.remove();
+          URL.revokeObjectURL(url);
+        }
+        document
+          .getElementById("calendar-mehndi")
+          .addEventListener("click", () =>
+            downloadCalendar(
+              "Mehndi Raat",
+              "20261101T103000Z",
+              "20261101T133000Z",
+              "Mehndi Raat at 4:00 PM India Standard Time.",
+            ),
+          );
+        document
+          .getElementById("calendar-wedding")
+          .addEventListener("click", () =>
+            downloadCalendar(
+              "Wedding Banquet",
+              "20261102T070000Z",
+              "20261102T100000Z",
+              "Wedding Banquet at 12:30 PM India Standard Time.",
+            ),
+          );
+        document
+          .getElementById("share-invitation")
+          .addEventListener("click", async () => {
+            const shareData = {
+              title: "Bilal Ahmad Parray | Wedding Countdown",
+              text: "Wedding celebration countdown for Bilal Ahmad Parray. Mehndi Raat: 1 November 2026 at 4:00 PM. Wedding Banquet: 2 November 2026 at 12:30 PM. Event location: Abdul Qayoom Parray’s Residence, Sozeith.",
+              url: window.location.href,
+            };
+            try {
+              if (navigator.share) await navigator.share(shareData);
+              else if (navigator.clipboard && window.isSecureContext) {
+                await navigator.clipboard.writeText(
+                  shareData.text + "\n" + window.location.href,
+                );
+                alert(
+                  "Countdown details copied. You can paste them into WhatsApp.",
+                );
+              } else {
+                window.prompt(
+                  "Copy and share this countdown:",
+                  shareData.text + "\n" + window.location.href,
+                );
+              }
+            } catch (error) {
+              if (error.name !== "AbortError")
+                alert(
+                  "Sharing was not available on this device. You can copy the website link from your browser address bar.",
+                );
+            }
+          });
+        function updateCountdown(timer) {
+          const target = new Date(timer.dataset.countdown).getTime();
+          const now = Date.now();
+          const remaining = target - now;
+          const units = timer.querySelectorAll(".time-unit strong");
+          const status = timer.parentElement.querySelector(".countdown-status");
+          if (remaining <= 0) {
+            units.forEach((unit) => (unit.textContent = "0"));
+            status.textContent =
+              remaining > -86400000
+                ? "The celebration is underway or has begun!"
+                : "This celebration date has passed.";
+            return;
+          }
+          const days = Math.floor(remaining / 86400000);
+          const hours = Math.floor((remaining % 86400000) / 3600000);
+          const minutes = Math.floor((remaining % 3600000) / 60000);
+          const seconds = Math.floor((remaining % 60000) / 1000);
+          [days, hours, minutes, seconds].forEach(
+            (value, index) =>
+              (units[index].textContent = String(value).padStart(2, "0")),
+          );
+          status.textContent = "Time remaining";
+        }
+        function tick() {
+          timers.forEach(updateCountdown);
+        }
+        tick();
+        window.setInterval(tick, 1000);
+      })();
+    </script>
+  </body>
 </html>
